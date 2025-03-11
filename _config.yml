@@ -1,0 +1,16 @@
+url: "boystrange.github.io"
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+
+exclude:
+  - Makefile
+  - vendor
+  - package-lock.json
+  - package.json
+  - node_modules
+
+permalink: /:year/:month/:day/:title/
+
+theme: jekyll-theme-minimal
