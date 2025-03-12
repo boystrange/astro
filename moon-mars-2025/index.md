@@ -14,121 +14,125 @@ using an Astronomik UV-IR cut filter.
 
 ## Preprocessing
 
-I use [WBPP] to process and stack all these files, lowering both the calibration
-exposure tolerance and the post-calibration exposure tolerance to 0 so that
-PixInsight doesn't try stacking all light frames together. As it happens,
-stacking fails for the 3ms light frames anyway, likely because of the lack of
-stars (Mars and the Moon were crossing Gemini, in a region with relatively few
-bright stars). The point of throwing the 3ms lights to [WBPP] is only to obtain
-the debayered files automatically, which I can stack later on with
-[FFTRegistration].
+I use **WBPP** to process and stack all these files, lowering both the
+calibration exposure tolerance and the post-calibration exposure tolerance to 0
+so that PixInsight wouldn't try stacking all light frames together. As it
+happens, stacking fails for the 3ms light frames anyway, likely because of the
+lack of stars (Mars and the Moon were crossing
+[Gemini](https://en.wikipedia.org/wiki/Gemini_(constellation)), in a region with
+relatively few bright stars). This is not a big deal, since the point of
+throwing the 3ms lights to **WBPP** is only to obtain the debayered files
+automatically, which I can stack later on with **FFTRegistration**.
 
-![](stack3s.png)
+![stack 3s](stack3s.png)
 
 This is the result of stacking the 3s lights. The brightness of the moon
-(possibly along with some humidity in the air) causes a huge halo which is going
+(possibly along with some humidity in the air) causes a huge halo which proves
 to be difficult to remove.
 
 ## Moon stacking
 
-In order to stack the moon from the 3ms light frames, I use [FFTRegistration]. I
-add the debayered frames created by [WBPP] and select the 30th frame as
+In order to stack the moon from the 3ms light frames, I use **FFTRegistration**.
+I add the debayered frames created by **WBPP** and select the 30th frame as
 reference frame. In this way, the resulting moon is positioned roughly half way
-from the start to the end of the imaging session. There's no need to specify an
-output directory, since all we want is the stacked image (make sure that
-"Integrate registered images" is checked).
+from the start to the end of the imaging session. There is no need to specify an
+output directory, since all we want is the stacked image.
 
-![](FFTRegistration.png)
+![FFTRegistration](FFTRegistration.png)
 
 Both stacked images have a green cast that is likely due to the Astronomik UV-IR
 filter I used while capturing frames.
 
-![](stack3ms.png)
+![stack 3ms](stack3ms.png)
 
 ## Post-processing the star field
 
-First of all I try to reduce the halo by running [ABE]. Given that the halo has
-a very irregular shape, I raised the function degree to **11**. It took a lot of
-trial and error to find the degree that results in the "best" star field, the
-one that leads to the least amount of artifacts later on. The result is still
-not perfect, but I'm not too worried since I'm going to use just the stars from
-this image.
+First of all let us try to reduce the halo by running **ABE**. Given that the
+halo has a very irregular shape, I raise the function degree to **11**. It takes
+a lot of trial and error to find the degree resulting in the "best" star field,
+the one with the least amount of residual halo and that yields fewer artifacts
+later on. The result is not perfect, but it's OK: we're going to use just the
+stars from this image and we will add a mild artificial glow towards the end of
+post-processing.
 
-![](stack_abe.png)
+![stars ABE](stack_abe.png)
 
-Next I run BlurXterminator as if I were processing a plain nebula photo, but I'm
-only interested in reducing stars (and Mars) so I disable nonstellar sharpening.
-This also reduces any artifact that deconvolution may introduce and that may
-later be mistaken for a star. Then, I run StarXterminator to remove the stars.
-There are some residual artifacts around the moon, but I can remove those with
-CloneStamp. Finally, I use Set Astro's [StarStretch] to stretch the stars
-selecting the option to remove the green noise. Also, I decrease the stretch
-amount to 4 so as to reduce the amount of artifacts that become visible after
-the stretching and not to have the dimmest stars visible. The point is that
-around the moon (where the bright halo was strongest) there will be a starless
-zone and if the rest of the sky is packed with stars such zone will be very
-noticeable later on, once the moon is inserted. So, I think it's better seeing
-fewer stars but with the illusion of a more uniform star field across the whole
-image.
+Next I use [BlurXterminator] as if I were processing a plain nebula photo. Since
+I'm only interested in reducing stars (and Mars), I disable nonstellar
+sharpening. This also reduces any artifact that deconvolution may introduce and
+that may later be mistaken for a star. Then, I run [StarXterminator] to remove
+the stars. There are some residual artifacts around the moon, but I can remove
+those with **CloneStamp**. Finally, I use Set Astro's [StarStretch] to stretch
+the stars. I check the option to remove the green noise and I **decrease the
+stretch amount to 4** so as to reduce the amount of artifacts that become
+visible after the stretching and not to have the dimmest stars visible. The
+point is that around the moon (where the bright halo was strongest) there will
+be a starless zone and if the rest of the sky is packed with stars such zone
+will be very noticeable later on, once the moon is inserted. So, I think it's
+better seeing fewer stars but with the illusion of a more uniform star field
+across the whole image.
 
-![](only_stars.png)
+![halo removed](only_stars.png)
 
-It's now time to get rid of the last moon artifacts using CloneStamp. I hate
+It's now time to get rid of the last moon artifacts using **CloneStamp**. I hate
 using this tool, but there's no other way around the problem.
 
-![](stars_clone_stamp.png)
+![stars CloneStamp](stars_clone_stamp.png)
 
-As I'm using CloneStamp, I realize that there's still a dim trace of the moon's
-halo such that the hole left by the moon is barely noticeable. Since the moon
-will not fill this hole entirely, I think it's better to darken the background.
-To this aim, I create a star mark and use CurvesTransformation to clip the
-background to 0. Then, I use SimplexNoise with amount 0.02 and scale 1 to
-restore a minimal noisy background, so that it's not exactly black.
+As I'm using **CloneStamp**, I realize that there's still a dim trace of the
+moon's halo such that the hole left by the moon is barely noticeable. Since the
+moon will not fill this hole entirely, I think it's better to darken the
+background. To this aim, I create a star mark with **StarMask** and use
+**CurvesTransformation** to clip the background to 0. Then, I use
+**SimplexNoise** with amount 0.02 and scale 1 to restore a minimal noisy
+background, so that it's not exactly black.
 
-![](stars_noise.png)
+![stars with artificial noise added](stars_noise.png)
 
 ## Post-processing the moon
 
-I use ColorCalibration to get rid of the green cast. To do so, I create two
+I use **ColorCalibration** to get rid of the green cast. To do so, I create two
 previews in the moon stack, a small one surrounding a bright crater and a larger
 one in the background. The result is a neutral moon.
 
-![](moon_calibrated.png)
+![moon calibrated](moon_calibrated.png)
 
-I use CurvesTransformation for brightening the moon and for adding a little bit
-of contrast with a gentle S curve, being careful not to overexpose the brightest
-craters. I also increase saturation in two steps, so that the moon regains some
-color. Finally, I use BlurXterminator with default settings to sharpen the
-details.
+I use **CurvesTransformation** for brightening the moon and for adding a little
+bit of contrast with a gentle S curve, being careful not to overexpose the
+brightest craters. I also increase saturation in two steps, so that the moon
+regains some color. Finally, I use [BlurXterminator] with default settings to
+sharpen the details.
 
-![](moon_brightness.png)
+![moon sharpened](moon_brightness.png)
 
 ## Final image composition
 
-I like ImageBlend to merge images. Here we're going to use it twice. First of
+I like [ImageBlend] to merge images. Here we're going to use it twice. First of
 all, as explained in this [Adam Block's
-video](https://www.youtube.com/watch?v=DQjs2yB_MAw), we use ImageBlend to add a
-little bit of **glow** to the moon. Basically, we combine the image of the moon
+video](https://www.youtube.com/watch?v=DQjs2yB_MAw), I use [ImageBlend] to add a
+little bit of **glow** to the moon. The idea is to combine the image of the moon
 with itself, tweaking the filter parameters until we obtain a fairly realistic
 halo.
 
-![](make_halo.png)
+![moon glow](make_halo.png)
 
-Then we use ImageBlend once again to merge the moon and the starry background. I
-rotate the image by 180 degrees and use DynamicCrop to remove a thin border of
-~50 pixels all around the border, where the [FFTRegistration] didn't have enough
-pixels to integrate.
+Then we use [ImageBlend] once again to merge the moon and the starry background.
+I rotate the image by 180 degrees and use **DynamicCrop** to remove a thin area
+of ~50 pixels all around the border, where the **FFTRegistration** didn't have
+enough pixels to integrate.
 
-![](final.png)
-
-There is a noticeable starless zone around the moon, but overall I'm quite
-pleased with the result.
+![final](final.png)
 
 As a final step, I also generate an annotated version of the image. To that aim,
-I need to plate solve the image again. ImageSolver needs to know that the star
-**47 Gem** is in the picture. I also enter the exact date in which the images
-were captured, as well as the focal length of the telescope (174mm) and the
-pixel size (3.76). When using AnnotateImage it is important to check "Planets"
-so that Mars is properly annotated.
+I need to plate solve the image again. **ImageSolver** needs to know that the
+star **47 Geminorum** is in the picture. I also enter the exact date in which
+the images were captured, as well as the focal length of the telescope (174mm)
+and the pixel size (3.76). When using **AnnotateImage** it is important to check
+"Planets" so that Mars is properly annotated.
 
-![](final_ann.png)
+![final with annotations](final_ann.png)
+
+[BlurXterminator]: https://www.rc-astro.com/software/bxt/
+[StarXterminator]: https://www.rc-astro.com/software/sxt/
+[ImageBlend]: https://cosmicphotons.com/scripts/
+[StarStretch]: https://www.setiastro.com/pjsr-scripts
