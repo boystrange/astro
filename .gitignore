@@ -1,0 +1,4 @@
+.bundle
+*.lock
+vendor
+_site
