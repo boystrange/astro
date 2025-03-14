@@ -1,8 +1,11 @@
-# An astrophtography blog
+# My astrophtography journal
 
-Hello, I'm [Luca Padovani](https://boystrange.github.io) and this is my
-astrophotography blog. Here I'll post pictures and describe detailed processing
-workflows for the targets I shoot.
+When you become passionate about an hobby, astrophotography in this case, you
+want to do it all the time. Since I live in a place where most nights are cloudy
+or foggy, I had to find an alternative way to "do astrophotography" in at least
+some of those nights as well. This journal is meant to be just that. Here I'll
+post pictures and describe detailed processing workflows for the targets I
+shoot.
 
 All pictures you find here are licensed under a [Creative Commons
 Attribution-ShareAlike 4.0
@@ -12,4 +15,5 @@ License](https://creativecommons.org/licenses/by-sa/4.0/) <i class="fa-brands
 
 ## Targets
 
-1. [Mars and the Moon](moon-mars-2025/index.md) (March 2025)
+1. [Seagull Nebula (IC 2177)](seagull-nebula/index.md) (March 2025)
+2. [Mars and the Moon](moon-mars-2025/index.md) (March 2025)

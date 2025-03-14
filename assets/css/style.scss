@@ -20,9 +20,6 @@ body {
     counter-reset: sidenote-counter;
 }
 
-article {
-}
-
 h1, h2, h3 {
     line-height: 1;
     clear: both;
@@ -99,7 +96,7 @@ img {
 p > .aside {
     float: right;
     clear: right;
-    width: 35%;
+    width: 40%;
     margin: 0rem 0rem 2rem 2rem;
     font-size: 1.1rem;
     line-height: 1.3;
