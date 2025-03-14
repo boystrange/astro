@@ -1,4 +1,4 @@
-# Seagull Nebula (IC 2177)
+# Seagull Nebula -- IC 2177
 
 March 2025
 
@@ -10,16 +10,9 @@ At the beginning of March 2025 there was an extraordinary streak of clear
 nights, no humidity and a young moon. I decided to take advantage of this week
 to photograph what would probably have been the last nebula before summer time
 (the balcony from which I'm shooting faces south and the galaxy season doesn't
-offer much from that perspective).
-
-1. 2025-03-02
-2. 2025-03-03
-3. 2025-03-04
-4. 2025-03-05
-5. 2025-03-06
-
-Given the size of the target, I decided to use the Askar FMA180 Pro coupled with
-the ASI533MC Pro and an Optolong L-ULTIMATE filter. The session resulted in:
+offer much from that perspective). Given the size of the target, I decided to
+use the Askar FMA180 Pro coupled with the ASI533MC Pro and an Optolong
+L-ULTIMATE filter. The session resulted in:
 
 * 287 x 300s light frames (barely under 24 hours)
 * 50 x 4s flat frames
@@ -30,11 +23,11 @@ the ASI533MC Pro and an Optolong L-ULTIMATE filter. The session resulted in:
 ![Automatic DBE](adbe.png){:.aside .noshadow}
 
 I cropped ~50px around the border to get rid of any stacking artifacts caused by
-dithering. Since the telescope had been mounted the whole week, the framing was
+dithering. Since the telescope stayed mounted the whole week, the framing was
 exactly the same and there was no need to further crop the image.
 
-The seagull nebula is relatively low at my latitude, which means that the
-resulting image presents a fairly strong gradient due to light pollution. I
+The seagull nebula is relatively low at my latitude, which meant that the
+resulting image presented a fairly strong gradient caused by light pollution. I
 found that the **Automatic DBE** script by Seti Astro worked well on this
 target, provided that I excluded all areas containing significant nebulosity.
 
@@ -49,24 +42,23 @@ nebula to get rid of the background noise.
 
 ![Foraxx palette](foraxx.png){:.aside}
 
-Having used a strong dual narrowband filter, for this target I chose to base my
-stretching on the Foraxx palette. I had written a **PixelMath** equation myself
-to convert an RGB image to the Foraxx palette, but that didn't seem to work well
-for some reason. Therefore I used Set Astro's **Perfect Palette Picker**, I made
-sure that linear input data was selected, and stretched my Hα+OIII image. This
-script yields really good results, but unfortunately it is not possible to
-control in any way the amount of stretching that it performs. In this case, I
-found that it overstretched the image a bit too much, and the background turned
-out to be too bright.
+Having used a strong dual narrowband filter, I decided to base my stretching on
+the Foraxx palette. I had written a **PixelMath** equation myself to convert an
+RGB image to the Foraxx palette, but that didn't seem to work well for some
+reason. Therefore I used Seti Astro's **Perfect Palette Picker**, I made sure
+that linear input data was selected, and stretched my Hα+OIII image. This script
+yields really good results, but unfortunately it is not possible to control in
+any way the amount of stretching that it performs. In this case, I found that it
+overstretched the image a bit too much, and the background turned out to be too
+bright.
 
 ![stretching](stretching.png){:.aside}
 
 I used **HistogramTransformation** to darken the image and get rid of the
-largely useless pixels below the median. I ended up to clip slighly more than
-1000 pixels, which was not a big issue. Even after that, the background was
-still too bright, therefore I used **GHS** to further darken the image and at
-the same time add some contrast (mode: RGB, stretch factor: 0.860, symmetry
-point: 0.577825).
+largely useless pixels below the median. I ended up clipping around 1000 pixels,
+which was not a big issue. Even after that, the background was still too bright,
+therefore I used **GHS** to further darken the image and at the same time add
+some contrast (mode: RGB, stretch factor: 0.860, symmetry point: 0.577825).
 
 The picture was looking good, but I was hoping to emphasize the bluish region
 under the wings of the seagull. Therefore I performed two more **GHS** stretches
@@ -94,15 +86,15 @@ getting rid of the noise that had emerged from the various stretching phases. I
 then re-enabled the mask to increase color saturation with
 **CurvesTransformation**.
 
-Finally, I removed the mask and ran **BackgroundNeutralization** to remove a
+Finally, I disabled the mask and ran **BackgroundNeutralization** to remove a
 slight reddish cast that was left on the image. The nebula was done!
 
 ## Star stretching and blending
 
-Star processing is made easy by Seti Astro's **Star Stretch** script. I made
+Star processing was easy thanks to Seti Astro's **Star Stretch** script. I made
 sure to enable the removal of green noise and I increased the stretching of
 stars to 5.5 (many of them were really tiny). I then obtained the final image
-thanks to the [ImageBlend] script.
+using the [ImageBlend] script.
 
 In order to annotate the image I had to plate solve it first, using [IC
 2177](https://en.wikipedia.org/wiki/IC_2177) as reference object, 178mm for
@@ -113,4 +105,5 @@ ark-shaped reflection nebula **VdB95**.
 
 [BlurXTerminator]: https://www.rc-astro.com/software/bxt/
 [StarXTerminator]: https://www.rc-astro.com/software/sxt/
+[NoiseXTerminator]: https://www.rc-astro.com/software/nxt/
 [ImageBlend]: https://cosmicphotons.com/scripts/
