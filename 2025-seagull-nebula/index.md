@@ -88,9 +88,9 @@ reddish cast that was left on the image. The nebula was done!
 
 Star processing was easy thanks to Seti Astro's **Star Stretch** script. I made
 sure to enable green noise removal and I increased the stretching of stars to
-5.5 (many of them were really tiny). I then merged the nebual and the stars
-using the [ImageBlend] script and I finished the image by rotating the belnd by
-180°, so that the seagull would be flying up.
+5.5 (many of them were really tiny or faint). I then merged the nebula and the
+stars using [ImageBlend] and I rotated the image by 180°, so that the seagull
+would be aiming up.
 
 In order to annotate the image I rescaled it down by 2 with **IntegerResample**,
 plate solved it using [IC 2177](https://en.wikipedia.org/wiki/IC_2177) as

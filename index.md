@@ -15,5 +15,5 @@ License](https://creativecommons.org/licenses/by-sa/4.0/) <i class="fa-brands
 
 ## Targets
 
-1. [Seagull Nebula -- IC 2177](seagull-nebula/index.md) (March 2025)
-2. [Mars and the Moon](moon-mars-2025/index.md) (March 2025)
+1. [Seagull Nebula -- IC 2177](2025-seagull-nebula/index.md) (March 2025)
+2. [Mars and the Moon](2025-moon-mars/index.md) (March 2025)
