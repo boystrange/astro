@@ -10,9 +10,10 @@ At the beginning of March 2025 there was an extraordinary streak of clear
 nights, no humidity and a young moon. I decided to take advantage of this week
 to photograph what would probably have been the last nebula before summer time
 (the balcony from which I'm shooting faces south and the galaxy season doesn't
-offer much from that perspective). Given the size of the target, I decided to
-use the Askar FMA180 Pro coupled with the ASI533MC Pro and an Optolong
-L-ULTIMATE filter. The session resulted in:
+offer much from that perspective).
+
+Given the size of the target, I decided to use the Askar FMA180 Pro coupled with
+the ASI533MC Pro and an Optolong L-ULTIMATE filter. The session ended up with:
 
 * 287 x 300s light frames (barely under 24 hours)
 * 50 x 4s flat frames
@@ -20,23 +21,25 @@ L-ULTIMATE filter. The session resulted in:
 
 ## Preliminary processing
 
-![Automatic DBE](adbe.png){:.aside .noshadow}
+![DBE](dbe.png){:.aside}
 
-I cropped ~100px around the border of the drizzled image to get rid of any
+I cropped ~100px around the border of the drizzled image to get rid of the
 stacking artifacts caused by dithering. Since the telescope stayed mounted the
 whole week, the framing was exactly the same and there was no need to further
 crop the image.
 
 The seagull nebula is relatively low at my latitude, which meant that the
 resulting image presented a fairly strong gradient caused by light pollution. I
-found that the **Automatic DBE** script by Seti Astro worked well on this
-target, provided that I excluded all areas containing significant nebulosity.
+used **DynamicBackgroundExtraction** on this target, carefully avoiding the
+areas containing significant nebulosity, increasing the tolerance to 3 and
+placing numerous samples in the upper-left corner, where the gradient was
+strongest.
 
-I then applied [BlurXTerminator] (default settings) to reduce the stars and to
-sharpen the nebulosity a little. I then used [StarXTerminator] (with unscreen
-stars deselected) to separate the stars from the nebula and applied
-[NoiseXTerminator] (default settings, denoise = 0.90 and 5 iterations) to the
-nebula to get rid of the background noise.
+I applied [BlurXTerminator] (default settings) to reduce the stars and to
+sharpen the nebulosity. Then, I used [StarXTerminator] (with unscreen stars
+deselected) to separate the stars from the nebula and applied [NoiseXTerminator]
+(default settings, denoise = 0.90 and 5 iterations) to the nebula to get rid of
+the background noise.
 
 ## Post-processing of the nebula
 
