@@ -1,4 +1,4 @@
-# Leo Triplet
+# Leo Triplet -- NGC 3628, M65 and M66
 
 March 2024
 
