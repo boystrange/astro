@@ -79,7 +79,7 @@ introduced and that could later be mistaken for a star. Then, I ran
 [StarXTerminator] to remove the stars.
 
 There were some residual artifacts around the moon, which I had to remove with
-**CloneStamp**. Finally, I used Set Astro's [StarStretch] to stretch the stars.
+**CloneStamp**. Finally, I used Seti Astro's [StarStretch] to stretch the stars.
 I enabled the option to remove the green noise and I **decreased the stretch
 amount to 4** so as to reduce the amount of artifacts that became visible after
 the stretching and also not to have the dimmest stars visible. The point was

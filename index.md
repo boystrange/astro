@@ -15,6 +15,6 @@ License](https://creativecommons.org/licenses/by-sa/4.0/) <i class="fa-brands
 
 1. [M46](2024-M46/index)
 2. [Leo Triplet -- NGC 3628, M65 and M66](2024-leo-triplet/index)
-3. [Bode'S Galaxy and Cigar Galaxy -- M81 and M82](2024-bodes-galaxy/index)
+3. [Bode's Galaxy and Cigar Galaxy -- M81 and M82](2024-bodes-galaxy/index)
 4. [Seagull Nebula -- IC 2177](2025-seagull-nebula/index)
 5. [Mars and the Moon](2025-moon-mars/index)
