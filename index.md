@@ -7,12 +7,17 @@ nights as well. This journal is meant to be just that.
 
 ## Targets
 
-1. [M46](2024-M46/index)
-2. [Leo Triplet -- NGC 3628, M65 and M66](2024-leo-triplet/index)
-3. [Bode's Galaxy and Cigar Galaxy -- M81 and M82](2024-bodes-galaxy/index)
-4. [Rosette Nebula -- Caldwell 49](2024-rosette/index)
-5. [Seagull Nebula -- IC 2177](2025-seagull-nebula/index)
-6. [Mars and the Moon](2025-moon-mars/index)
+<div class="row">
+    {% for target in site.data.log %}
+        <div class="col">
+            <a class="card shadow" href="{{ target.key }}/index.html">
+                <img alt="{{ target.title }}" src="{{ target.key }}/final.png"/>
+                {{ target.title }}
+            </a>
+        </div>
+    {% endfor %}
+</div>
+{{ targets }}
 
 ## Tools
 

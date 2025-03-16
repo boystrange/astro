@@ -1,0 +1,77 @@
+- key: 2025-moon-mars
+  title:        "Mars and Moon Conjunction"
+  main-object:  Moon
+  other-objects:
+    - Mars
+  sessions:
+    - 2025-03-08
+  integration: 0.05
+  scope: Askar FMA180 Pro
+  filter: Astronomik L2
+
+- key: 2025-seagull-nebula
+  title:  "Seagull Nebula"
+  main-object: IC 2177
+  other-objects:
+    - VdB95
+  sessions:
+    - 2025-03-02
+    - 2025-03-03
+    - 2025-03-04
+    - 2025-03-05
+    - 2025-03-06
+  integration: 24
+  scope: Askar FMA180 Pro
+  filter: Optolong L-ULTIMATE
+
+- key: 2024-rosette
+  title:        "Rosette Nebula"
+  main-object:  Caldwell 49
+  sessions:
+    - 2024-12-26
+    - 2024-12-27
+    - 2024-12-28
+    - 2024-12-29
+    - 2024-12-30
+  integration: 27.6
+  scope: SharpStar 76EDPH
+  reducer: 0.8
+  filter: Optolong L-ENHANCE
+
+- key: 2024-leo-triplet
+  title: "Leo Triplet"
+  main-object: NGC 3628
+  other-objects:
+    - M65
+    - M66
+  sessions:
+    - 2024-03-15
+  integration: 2
+  scope: SharpStar 76EDPH
+  reducer: 0.8
+  filter: SvBony UV-IR cut
+
+- key: 2024-M46
+  title: "M46"
+  main-object: M46
+  other-objects:
+    - NGC 2439
+    - NGC 2425
+  sessions:
+    - 2024-03-02
+  integration: 1
+  scope: SharpStar 76EDPH
+  reducer: 0.8
+  filter: SvBony UV-IR cut
+
+- key: 2024-bodes-galaxy
+  title:        "Bode's Galaxy and Cigar Galaxy"
+  main-object:  M81
+  other-objects:
+    - M82
+  sessions:
+    - 2024-02-13
+  integration: 4
+  scope: SharpStar 76EDPH
+  reducer: 0.8
+  filter: SvBony UV-IR cut

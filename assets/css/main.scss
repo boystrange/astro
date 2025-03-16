@@ -104,8 +104,27 @@ p > .aside {
     position: relative;
 }
 
-.aside {
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.col {
+    flex-basis: 216px;
+}
+
+.aside,
+.shadow {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    border-radius: 4px;
+    display: block;
+    padding: 8px;
 }
 
 .noshadow {
