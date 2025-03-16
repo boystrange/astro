@@ -1,4 +1,4 @@
-# Astrophtography Journal
+# Astrophotography Journal
 
 When you become passionate about astrophotography, you want to do it all the
 time. Since I live in a place where most nights are cloudy or foggy, I had to
