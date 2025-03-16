@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+********************************************************************
+PixInsight XML Process Serialization Module - XPSM 1.0
+********************************************************************
+Generated on 2024-12-27T09:53:20.899Z
+PixInsight Core 1.9.1 (x64)
+Copyright (c) 2003-2024 Pleiades Astrophoto
+********************************************************************
+-->
+<xpsm version="1.0" xmlns="http://www.pixinsight.com/xpsm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.pixinsight.com/xpsm http://pixinsight.com/xpsm/xpsm-1.0.xsd">
+   <instance class="PixelMath" version="256" id="RGBtoForaxx_instance">
+      <time start="2024-12-27T08:37:03.212Z" span="2.495657"/>
+      <parameter id="expression">Ha = $T[0];
+Ha</parameter>
+      <parameter id="expression1">Ha = $T[0];
+Oiii = ($T[1] + $T[2]) * .5;
+HO = (Oiii * Ha) ^ ~(Oiii * Ha);
+Ha * HO + Oiii * ~HO</parameter>
+      <parameter id="expression2">Oiii = ($T[1] + $T[2]) * .5;
+Oiii</parameter>
+      <parameter id="expression3"></parameter>
+      <parameter id="useSingleExpression" value="false"/>
+      <parameter id="symbols">Ha; Oiii; HO</parameter>
+      <parameter id="clearImageCacheAndExit" value="false"/>
+      <parameter id="cacheGeneratedImages" value="false"/>
+      <parameter id="generateOutput" value="true"/>
+      <parameter id="singleThreaded" value="false"/>
+      <parameter id="optimization" value="true"/>
+      <parameter id="use64BitWorkingImage" value="false"/>
+      <parameter id="rescale" value="false"/>
+      <parameter id="rescaleLower" value="0"/>
+      <parameter id="rescaleUpper" value="1"/>
+      <parameter id="truncate" value="true"/>
+      <parameter id="truncateLower" value="0"/>
+      <parameter id="truncateUpper" value="1"/>
+      <parameter id="createNewImage" value="false"/>
+      <parameter id="showNewImage" value="true"/>
+      <parameter id="newImageId">Foraxx</parameter>
+      <parameter id="newImageWidth" value="0"/>
+      <parameter id="newImageHeight" value="0"/>
+      <parameter id="newImageAlpha" value="false"/>
+      <parameter id="newImageColorSpace" value="RGB"/>
+      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+      <table id="outputData" rows="0"/>
+   </instance>
+   <icon id="RGBtoForaxx" instance="RGBtoForaxx_instance" xpos="1584" ypos="256" workspace="Workspace01"/>
+</xpsm>
