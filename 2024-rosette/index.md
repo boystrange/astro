@@ -79,12 +79,24 @@ structure and details. I finished off applying **BackgroundNeutralization**
 (after having defined a dark preview in the upper-right corner) and
 [NoiseXTerminator] once more.
 
-## Star stretching and merging
+## Star stretching, merge and annotation
 
 To stretch the stars I used Seti Astro's **Star Stretch** script with default
 settings. I then merged the nebula and the stars using [ImageBlend].
 
 ![final immage annotated](final_annotated.png)
+
+## Fun facts
+
+At the beginning of 2025 I sent a previous processing of this image to [Nico
+Carver](https://www.nebulaphotos.com/). In the YouTube video below you can hear
+Nico commenting on the image. Since then I forgot the exact steps I used to
+obtain that particular rendering, but I must say I personally like the version
+discussed in this page more.
+
+<center>
+<iframe class="aside" width="560" height="315" src="https://www.youtube.com/embed/0zIyk7q5ivs?si=cs_5MTuC8OQ50muz&amp;start=4399" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
 
 [BlurXTerminator]: https://www.rc-astro.com/software/bxt/
 [StarXTerminator]: https://www.rc-astro.com/software/sxt/
