@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+********************************************************************
+PixInsight XML Process Serialization Module - XPSM 1.0
+********************************************************************
+Generated on 2025-03-16T10:40:32.413Z
+PixInsight Core 1.9.3 (x64)
+Copyright (c) 2003-2025 Pleiades Astrophoto
+********************************************************************
+-->
+<xpsm version="1.0" xmlns="http://www.pixinsight.com/xpsm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.pixinsight.com/xpsm http://pixinsight.com/xpsm/xpsm-1.0.xsd">
+   <instance class="ProcessContainer" id="Rosette_instance">
+      <instance class="ImageIdentifier" version="256" enabled="true">
+         <time start="2025-03-16T10:33:22.004Z" span="0.00548975"/>
+         <parameter id="id">main</parameter>
+      </instance>
+      <instance class="ProcessContainer" enabled="true">
+         <instance class="PixelMath" version="256" enabled="true">
+            <time start="2025-03-16T10:33:36.971Z" span="2.5855434"/>
+            <parameter id="expression">BlackPoint = iif((med($T[0]) - 2.7*sdev($T[0]))&lt;min($T[0]),min($T[0]),med($T[0]) - 2.7*sdev($T[0]));
+Rescaled = ($T[0] - BlackPoint) / (1 - BlackPoint);</parameter>
+            <parameter id="expression1">BlackPoint = iif((med($T[1]) - 2.7*sdev($T[1]))&lt;min($T[1]),min($T[1]),med($T[1]) - 2.7*sdev($T[1]));
+Rescaled = ($T[1] - BlackPoint) / (1 - BlackPoint);</parameter>
+            <parameter id="expression2">BlackPoint = iif((med($T[2]) - 2.7*sdev($T[2]))&lt;min($T[2]),min($T[2]),med($T[2]) - 2.7*sdev($T[2]));
+Rescaled = ($T[2] - BlackPoint) / (1 - BlackPoint);</parameter>
+            <parameter id="expression3"></parameter>
+            <parameter id="useSingleExpression" value="false"/>
+            <parameter id="symbols">BlackPoint, Rescaled</parameter>
+            <parameter id="clearImageCacheAndExit" value="false"/>
+            <parameter id="cacheGeneratedImages" value="false"/>
+            <parameter id="generateOutput" value="true"/>
+            <parameter id="singleThreaded" value="false"/>
+            <parameter id="optimization" value="true"/>
+            <parameter id="use64BitWorkingImage" value="true"/>
+            <parameter id="rescale" value="false"/>
+            <parameter id="rescaleLower" value="0"/>
+            <parameter id="rescaleUpper" value="1"/>
+            <parameter id="truncate" value="true"/>
+            <parameter id="truncateLower" value="0"/>
+            <parameter id="truncateUpper" value="1"/>
+            <parameter id="createNewImage" value="false"/>
+            <parameter id="showNewImage" value="true"/>
+            <parameter id="newImageId"></parameter>
+            <parameter id="newImageWidth" value="0"/>
+            <parameter id="newImageHeight" value="0"/>
+            <parameter id="newImageAlpha" value="false"/>
+            <parameter id="newImageColorSpace" value="SameAsTarget"/>
+            <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+            <table id="outputData" rows="0"/>
+         </instance>
+         <instance class="PixelMath" version="256" enabled="true">
+            <time start="2025-03-16T10:33:39.573Z" span="1.0183707"/>
+            <parameter id="expression">((Med($T[0])-1)*0.15*$T[0])/(Med($T[0])*(0.15+$T[0]-1)-0.15*$T[0])</parameter>
+            <parameter id="expression1">((Med($T[1])-1)*0.15*$T[1])/(Med($T[1])*(0.15+$T[1]-1)-0.15*$T[1])</parameter>
+            <parameter id="expression2">((Med($T[2])-1)*0.15*$T[2])/(Med($T[2])*(0.15+$T[2]-1)-0.15*$T[2])</parameter>
+            <parameter id="expression3"></parameter>
+            <parameter id="useSingleExpression" value="false"/>
+            <parameter id="symbols">L, S</parameter>
+            <parameter id="clearImageCacheAndExit" value="false"/>
+            <parameter id="cacheGeneratedImages" value="false"/>
+            <parameter id="generateOutput" value="true"/>
+            <parameter id="singleThreaded" value="false"/>
+            <parameter id="optimization" value="true"/>
+            <parameter id="use64BitWorkingImage" value="true"/>
+            <parameter id="rescale" value="false"/>
+            <parameter id="rescaleLower" value="0"/>
+            <parameter id="rescaleUpper" value="1"/>
+            <parameter id="truncate" value="true"/>
+            <parameter id="truncateLower" value="0"/>
+            <parameter id="truncateUpper" value="1"/>
+            <parameter id="createNewImage" value="false"/>
+            <parameter id="showNewImage" value="true"/>
+            <parameter id="newImageId"></parameter>
+            <parameter id="newImageWidth" value="0"/>
+            <parameter id="newImageHeight" value="0"/>
+            <parameter id="newImageAlpha" value="false"/>
+            <parameter id="newImageColorSpace" value="SameAsTarget"/>
+            <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+            <table id="outputData" rows="0"/>
+         </instance>
+         <instance class="PixelMath" version="256" enabled="true">
+            <time start="2025-03-16T10:33:40.607Z" span="0.41152988"/>
+            <parameter id="expression">$T[0]/max($T[0])</parameter>
+            <parameter id="expression1">$T[1]/max($T[1])</parameter>
+            <parameter id="expression2">$T[2]/max($T[2])</parameter>
+            <parameter id="expression3"></parameter>
+            <parameter id="useSingleExpression" value="false"/>
+            <parameter id="symbols"></parameter>
+            <parameter id="clearImageCacheAndExit" value="false"/>
+            <parameter id="cacheGeneratedImages" value="false"/>
+            <parameter id="generateOutput" value="true"/>
+            <parameter id="singleThreaded" value="false"/>
+            <parameter id="optimization" value="true"/>
+            <parameter id="use64BitWorkingImage" value="true"/>
+            <parameter id="rescale" value="false"/>
+            <parameter id="rescaleLower" value="0"/>
+            <parameter id="rescaleUpper" value="1"/>
+            <parameter id="truncate" value="true"/>
+            <parameter id="truncateLower" value="0"/>
+            <parameter id="truncateUpper" value="1"/>
+            <parameter id="createNewImage" value="false"/>
+            <parameter id="showNewImage" value="true"/>
+            <parameter id="newImageId"></parameter>
+            <parameter id="newImageWidth" value="0"/>
+            <parameter id="newImageHeight" value="0"/>
+            <parameter id="newImageAlpha" value="false"/>
+            <parameter id="newImageColorSpace" value="SameAsTarget"/>
+            <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+            <table id="outputData" rows="0"/>
+         </instance>
+      </instance>
+      <instance class="GeneralizedHyperbolicStretch" version="256" enabled="true">
+         <time start="2025-03-16T10:33:48.412Z" span="0.068444167"/>
+         <parameter id="stretchType" value="ST_GeneralisedHyperbolic"/>
+         <parameter id="stretchChannel" value="SC_Red"/>
+         <parameter id="inverse" value="false"/>
+         <parameter id="stretchFactor" value="0.440"/>
+         <parameter id="localIntensity" value="0.050"/>
+         <parameter id="symmetryPoint" value="0.110874"/>
+         <parameter id="highlightProtection" value="1.000000"/>
+         <parameter id="shadowProtection" value="0.000000"/>
+         <parameter id="blackPoint" value="0.000000"/>
+         <parameter id="whitePoint" value="1.000000"/>
+         <parameter id="colourBlend" value="1.000"/>
+         <parameter id="clipType" value="CT_RGBBlend"/>
+         <parameter id="useRGBWorkingSpace" value="false"/>
+      </instance>
+      <instance class="PixelMath" version="256" enabled="true">
+         <time start="2025-03-16T10:33:55.345Z" span="2.1408192"/>
+         <parameter id="expression">Ha = $T[0];
+Ha</parameter>
+         <parameter id="expression1">Ha = $T[0];
+Oiii = ($T[1] + $T[2]) * .5;
+HO = (Oiii * Ha) ^ ~(Oiii * Ha);
+Ha * HO + Oiii * ~HO</parameter>
+         <parameter id="expression2">Oiii = ($T[1] + $T[2]) * .5;
+Oiii</parameter>
+         <parameter id="expression3"></parameter>
+         <parameter id="useSingleExpression" value="false"/>
+         <parameter id="symbols">Ha; Oiii; HO</parameter>
+         <parameter id="clearImageCacheAndExit" value="false"/>
+         <parameter id="cacheGeneratedImages" value="false"/>
+         <parameter id="generateOutput" value="true"/>
+         <parameter id="singleThreaded" value="false"/>
+         <parameter id="optimization" value="true"/>
+         <parameter id="use64BitWorkingImage" value="false"/>
+         <parameter id="rescale" value="false"/>
+         <parameter id="rescaleLower" value="0"/>
+         <parameter id="rescaleUpper" value="1"/>
+         <parameter id="truncate" value="true"/>
+         <parameter id="truncateLower" value="0"/>
+         <parameter id="truncateUpper" value="1"/>
+         <parameter id="createNewImage" value="false"/>
+         <parameter id="showNewImage" value="true"/>
+         <parameter id="newImageId">Foraxx</parameter>
+         <parameter id="newImageWidth" value="0"/>
+         <parameter id="newImageHeight" value="0"/>
+         <parameter id="newImageAlpha" value="false"/>
+         <parameter id="newImageColorSpace" value="RGB"/>
+         <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+         <table id="outputData" rows="0"/>
+      </instance>
+      <instance class="HistogramTransformation" version="256" enabled="true">
+         <time start="2025-03-16T10:34:10.505Z" span="0.051291917"/>
+         <table id="H" rows="5">
+            <tr>
+               <td id="c0" value="0.00000000"/>
+               <td id="m" value="0.50000000"/>
+               <td id="c1" value="1.00000000"/>
+               <td id="r0" value="0.00000000"/>
+               <td id="r1" value="1.00000000"/>
+            </tr>
+            <tr>
+               <td id="c0" value="0.00000000"/>
+               <td id="m" value="0.50000000"/>
+               <td id="c1" value="1.00000000"/>
+               <td id="r0" value="0.00000000"/>
+               <td id="r1" value="1.00000000"/>
+            </tr>
+            <tr>
+               <td id="c0" value="0.00000000"/>
+               <td id="m" value="0.50000000"/>
+               <td id="c1" value="1.00000000"/>
+               <td id="r0" value="0.00000000"/>
+               <td id="r1" value="1.00000000"/>
+            </tr>
+            <tr>
+               <td id="c0" value="0.04303797"/>
+               <td id="m" value="0.50000000"/>
+               <td id="c1" value="1.00000000"/>
+               <td id="r0" value="0.00000000"/>
+               <td id="r1" value="1.00000000"/>
+            </tr>
+            <tr>
+               <td id="c0" value="0.00000000"/>
+               <td id="m" value="0.50000000"/>
+               <td id="c1" value="1.00000000"/>
+               <td id="r0" value="0.00000000"/>
+               <td id="r1" value="1.00000000"/>
+            </tr>
+         </table>
+      </instance>
+      <instance class="CurvesTransformation" version="256" enabled="true">
+         <mask id="range_mask" inverted="false" deleted="false"/>
+         <time start="2025-03-16T10:34:28.660Z" span="0.57754529"/>
+         <table id="R" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Rt" value="AkimaSubsplines"/>
+         <table id="G" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Gt" value="AkimaSubsplines"/>
+         <table id="B" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Bt" value="AkimaSubsplines"/>
+         <table id="K" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Kt" value="AkimaSubsplines"/>
+         <table id="A" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="At" value="AkimaSubsplines"/>
+         <table id="L" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Lt" value="AkimaSubsplines"/>
+         <table id="a" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="at" value="AkimaSubsplines"/>
+         <table id="b" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="bt" value="AkimaSubsplines"/>
+         <table id="c" rows="3">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="0.44091"/>
+               <td id="y" value="0.54622"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="ct" value="AkimaSubsplines"/>
+         <table id="H" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Ht" value="AkimaSubsplines"/>
+         <table id="S" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="St" value="AkimaSubsplines"/>
+      </instance>
+      <instance class="CurvesTransformation" version="256" enabled="true">
+         <mask id="range_mask" inverted="false" deleted="false"/>
+         <time start="2025-03-16T10:34:31.359Z" span="0.55781221"/>
+         <table id="R" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Rt" value="AkimaSubsplines"/>
+         <table id="G" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Gt" value="AkimaSubsplines"/>
+         <table id="B" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Bt" value="AkimaSubsplines"/>
+         <table id="K" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Kt" value="AkimaSubsplines"/>
+         <table id="A" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="At" value="AkimaSubsplines"/>
+         <table id="L" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Lt" value="AkimaSubsplines"/>
+         <table id="a" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="at" value="AkimaSubsplines"/>
+         <table id="b" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="bt" value="AkimaSubsplines"/>
+         <table id="c" rows="3">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="0.44091"/>
+               <td id="y" value="0.54622"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="ct" value="AkimaSubsplines"/>
+         <table id="H" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Ht" value="AkimaSubsplines"/>
+         <table id="S" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="St" value="AkimaSubsplines"/>
+      </instance>
+      <instance class="CurvesTransformation" version="256" enabled="true">
+         <mask id="range_mask" inverted="false" deleted="false"/>
+         <time start="2025-03-16T10:34:34.389Z" span="0.55786058"/>
+         <table id="R" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Rt" value="AkimaSubsplines"/>
+         <table id="G" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Gt" value="AkimaSubsplines"/>
+         <table id="B" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Bt" value="AkimaSubsplines"/>
+         <table id="K" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Kt" value="AkimaSubsplines"/>
+         <table id="A" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="At" value="AkimaSubsplines"/>
+         <table id="L" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Lt" value="AkimaSubsplines"/>
+         <table id="a" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="at" value="AkimaSubsplines"/>
+         <table id="b" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="bt" value="AkimaSubsplines"/>
+         <table id="c" rows="3">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="0.44091"/>
+               <td id="y" value="0.54622"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="ct" value="AkimaSubsplines"/>
+         <table id="H" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="Ht" value="AkimaSubsplines"/>
+         <table id="S" rows="2">
+            <tr>
+               <td id="x" value="0.00000"/>
+               <td id="y" value="0.00000"/>
+            </tr>
+            <tr>
+               <td id="x" value="1.00000"/>
+               <td id="y" value="1.00000"/>
+            </tr>
+         </table>
+         <parameter id="St" value="AkimaSubsplines"/>
+      </instance>
+      <instance class="LocalHistogramEqualization" version="256" enabled="true">
+         <mask id="range_mask" inverted="false" deleted="false"/>
+         <time start="2025-03-16T10:34:39.331Z" span="5.935483"/>
+         <parameter id="radius" value="64"/>
+         <parameter id="histogramBins" value="Bit8"/>
+         <parameter id="slopeLimit" value="2.0"/>
+         <parameter id="amount" value="0.200"/>
+         <parameter id="circularKernel" value="true"/>
+      </instance>
+      <instance class="UnsharpMask" version="256" enabled="true">
+         <mask id="range_mask" inverted="false" deleted="false"/>
+         <time start="2025-03-16T10:34:47.792Z" span="0.93280804"/>
+         <parameter id="sigma" value="4.00"/>
+         <parameter id="amount" value="0.50"/>
+         <parameter id="useLuminance" value="true"/>
+         <parameter id="linear" value="false"/>
+         <parameter id="deringing" value="false"/>
+         <parameter id="deringingDark" value="0.1000"/>
+         <parameter id="deringingBright" value="0.0000"/>
+         <parameter id="outputDeringingMaps" value="false"/>
+         <parameter id="rangeLow" value="0.0000000"/>
+         <parameter id="rangeHigh" value="0.0000000"/>
+      </instance>
+      <instance class="BackgroundNeutralization" version="256" enabled="true">
+         <time start="2025-03-16T10:34:57.791Z" span="0.064331917"/>
+         <parameter id="backgroundReferenceViewId"></parameter>
+         <parameter id="backgroundLow" value="0.0000000"/>
+         <parameter id="backgroundHigh" value="0.1000000"/>
+         <parameter id="useROI" value="true"/>
+         <parameter id="roiX0" value="4790"/>
+         <parameter id="roiY0" value="200"/>
+         <parameter id="roiX1" value="5430"/>
+         <parameter id="roiY1" value="915"/>
+         <parameter id="mode" value="RescaleAsNeeded"/>
+         <parameter id="targetBackground" value="0.0010000"/>
+      </instance>
+      <instance class="NoiseXTerminator" version="256" enabled="true">
+         <time start="2025-03-16T10:35:18.147Z" span="29.117443"/>
+         <parameter id="ai_file">NoiseXTerminator.3.mlpackage</parameter>
+         <parameter id="enable_color_separation" value="false"/>
+         <parameter id="enable_frequency_separation" value="false"/>
+         <parameter id="denoise" value="0.90"/>
+         <parameter id="denoise_color" value="0.90"/>
+         <parameter id="denoise_lf" value="0.9"/>
+         <parameter id="denoise_lf_color" value="0.9"/>
+         <parameter id="frequency_scale" value="5.0"/>
+         <parameter id="iterations" value="5"/>
+         <parameter id="detail" value="0.15"/>
+      </instance>
+   </instance>
+   <icon id="Rosette" instance="Rosette_instance" xpos="2168" ypos="192" workspace="Workspace01"/>
+</xpsm>
