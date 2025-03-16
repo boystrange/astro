@@ -113,7 +113,7 @@ p > .aside {
 }
 
 .col {
-    flex-basis: 216px;
+    flex-basis: 300px;
 }
 
 .aside,
@@ -125,6 +125,7 @@ p > .aside {
     border-radius: 4px;
     display: block;
     padding: 8px;
+    text-decoration: none;
 }
 
 .noshadow {
