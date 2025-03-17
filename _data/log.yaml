@@ -1,3 +1,14 @@
+- key: 2025-M44
+  title: "Beehive Open Cluster"
+  main-object: M44
+  sessions:
+    - 2025-03-16
+  integration: 1.73
+  light-frames: 104
+  scope: Askar FMA180 Pro
+  camera: ASI533MC Pro
+  filter: Optolong L-PRO
+
 - key: 2025-moon-mars
   title:        "Mars and Moon Conjunction"
   main-object:  Moon
@@ -7,6 +18,7 @@
     - 2025-03-08
   integration: 0.05
   scope: Askar FMA180 Pro
+  camera: ASI533MC Pro
   filter: Astronomik L2
 
 - key: 2025-seagull-nebula
@@ -22,6 +34,7 @@
     - 2025-03-06
   integration: 24
   scope: Askar FMA180 Pro
+  camera: ASI533MC Pro
   filter: Optolong L-ULTIMATE
 
 - key: 2024-rosette
@@ -35,8 +48,27 @@
     - 2024-12-30
   integration: 27.6
   scope: SharpStar 76EDPH
+  camera: ASI533MC Pro
   reducer: 0.8
   filter: Optolong L-ENHANCE
+
+- key: 2024-helix
+  title: "Helix Nebula"
+  main-object:
+  sessions:
+    - 2024-08-12
+    - 2024-08-13
+    - 2024-08-23
+    - 2024-08-24
+    - 2024-08-30
+    - 2024-08-31
+    - 2024-09-06
+  scope: SharpStar 76EDPH
+  camera: ASI533MC Pro
+  reducer: 0.8
+  filter: Optolong L-ENHANCE
+  light-frames: 300
+  integration: 15
 
 - key: 2024-western-veil
   title: "Western Veil Nebula"
@@ -45,6 +77,7 @@
     - 2024-07-09
     - 2024-07-10
   scope: SharpStar 76EDPH
+  camera: ASI533MC Pro
   reducer: 0.8
   filter: unknown
   light-frames: 218
@@ -61,6 +94,7 @@
     - 2024-03-15
   integration: 2
   scope: SharpStar 76EDPH
+  camera: ASI533MC Pro
   reducer: 0.8
   filter: SvBony UV-IR cut
 
@@ -74,6 +108,7 @@
     - 2024-03-02
   integration: 1
   scope: SharpStar 76EDPH
+  camera: ASI533MC Pro
   reducer: 0.8
   filter: SvBony UV-IR cut
 
@@ -86,5 +121,6 @@
     - 2024-02-13
   integration: 4
   scope: SharpStar 76EDPH
+  camera: ASI533MC Pro
   reducer: 0.8
   filter: SvBony UV-IR cut

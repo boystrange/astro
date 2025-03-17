@@ -72,7 +72,6 @@ dl,
 ol,
 ul {
     font-size: 1.4rem;
-    line-height: 2rem;
 }
 
 p {
@@ -114,6 +113,13 @@ p > .aside {
 
 .col {
     flex-basis: 300px;
+}
+
+ul.details {
+    font-size: small;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .aside,
