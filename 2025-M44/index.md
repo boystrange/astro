@@ -45,16 +45,15 @@ removal, which I noticed in some star halos. I then used
 
 ![comparison](comparison.png){:.aside}
 
-I ran the same processing workflow twice, once on the "uncorrected" image and
+I ran the same processing workflow twice, once on the "unrepaired" image and
 again on the image that had been corrected by the **Repaired HSV Separation**
 script. There is a subtle but noticeable difference in the image obtained
 through the script in that star halos are slightly more saturated and extend a
 little bit further (but not all the way) into the cores. Also, the script seems
 to clip the unused part of the dynamic range, so that it is not necessary to
-explicitly use **HistogramTransformation** after tretching. The image on the
-side compares the outcome of the two runs on one part of M44 (on the left is the
-outcome on the uncorrected image, on the right is the outcome on the corrected
-image). Overall I'm still not sure I used the script to the best of its
+explicitly use **HistogramTransformation** after tretching. Aside is a
+comparison of the two runs on one part of M44 (unrepaired on the left, repaired
+on the right). Overall I'm still not sure I used the script to the best of its
 potential, but I can say that it definitely improved the final outcome.
 
 [BlurXTerminator]: https://www.rc-astro.com/software/bxt/

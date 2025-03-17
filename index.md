@@ -12,7 +12,31 @@ nights as well. This journal is meant to be just that.
         <div class="col">
             <a class="card shadow" href="{{ target.key }}/index.html">
                 <img alt="{{ target.title }}" src="{{ target.key }}/final.png"/>
-                {{ target.title }}
+                <ul class="details">
+                    <li><b>{{ target.title }}</b></li>
+                    <li><i>Scope:</i> {{ target.scope }}</li>
+                    <li><i>Filter:</i>
+                    {% if target.filter %}
+                    {{ target.filter }}
+                    {% else %}
+                    none
+                    {% endif %}
+                    </li>
+                    <li><i>Camera:</i>
+                    {% if target.camera %}
+                    {{ target.camera }}
+                    {% else %}
+                    N/A
+                    {% endif %}
+                    </li>
+                    <li><i>Integration time:</i>
+                    {% if target.integration < 2 %}
+                    {{ target.integration | times: 60 | round }} minutes
+                    {% else %}
+                    {{ target.integration }} hours
+                    {% endif %}
+                    </li>
+                </ul>
             </a>
         </div>
     {% endfor %}
