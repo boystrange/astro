@@ -43,7 +43,10 @@ removal, which I noticed in some star halos. I then used
 
 ## Repaired versus unrepaired stars
 
-![comparison](comparison.png){:.aside}
+<span class="aside swap">
+    <img width="200" src="unrepaired.png"/>
+    <img width="200" src="repaired.png"/>
+</span>
 
 I ran the same processing workflow twice, once on the "unrepaired" image and
 again on the image that had been corrected by the **Repaired HSV Separation**
@@ -52,9 +55,9 @@ through the script in that star halos are slightly more saturated and extend a
 little bit further (but not all the way) into the cores. Also, the script seems
 to clip the unused part of the dynamic range, so that it is not necessary to
 explicitly use **HistogramTransformation** after tretching. Aside is a
-comparison of the two runs on one part of M44 (unrepaired on the left, repaired
-on the right). Overall I'm still not sure I used the script to the best of its
-potential, but I can say that it definitely improved the final outcome.
+comparison of the two runs on one part of M44 (hover to see the repaired
+version). Overall I'm still not sure I used the script to the best of its
+potential, but it seemed to slightly improve the final outcome.
 
 [BlurXTerminator]: https://www.rc-astro.com/software/bxt/
 [NoiseXTerminator]: https://www.rc-astro.com/software/nxt/

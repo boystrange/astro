@@ -142,3 +142,31 @@ ul.details {
     max-width: 90%;
     clear: both;
 }
+
+.swap {
+    width: auto !important;
+}
+
+.swap > img:first-child {
+    display: block;
+}
+
+.swap > img:last-child {
+    display: none;
+}
+
+.swap:hover > img:first-child {
+    display: none;
+}
+
+.swap:hover > img:last-child {
+    display: block;
+}
+
+// input[type="checkbox"]:checked:first-child {
+//     display: none;
+// }
+
+// input[type="checkbox"]:checked:first-child {
+//     display: block;
+// }
