@@ -29,30 +29,33 @@ rings surrounding the nebula.
 
 I ended this processing phase stretching the image with Seti Astro's
 **Statistical Stretch** selecting the unlinked mode. Becase the nebula occupies
-a small portion of the frame, I lowered the target median to 0.05.
+a small portion of the frame, I lowered the target median to 0.03.
 
 ## Non-linear post-processing
 
 I used **GHS** to enhance the visibility of the faint loops surrounding the
 nebula. To that aim, I chose a symmetry point in a dark region inside the loop
-and performed a gentle stretch (stretch factor: 1, local intensity: 1.5,
-highlights protection: 0.2). It was fundamental to lower the highlights
+and performed a gentle stretch (stretch factor: 1.12, local intensity: 1.95,
+highlights protection: 0.22). It was fundamental to lower the highlights
 protection value since I didn't want to stretch the bright areas more. I did
 another linear stretch with **GHS** to clip most of the unused dynamic range.
 
 ![starless image](nebula.png){:.aside}
 
-At this point I switched to the Foraxx palette using **PixelMath**. Before
+At this point I wanted to switch to Before switching to the Foraxx palette and
 boosting the colors I created a mask using **RangeSelection**, making sure that
 the mask included at least some of the faintest parts of the loop. I used
-**CurvesTransformation** twice to colorize the image. I also wanted to enhance
-the nebula's structure a little, but neither **UnsharpMask** nor
-**LocalHistogramEqualization** seemed to produce nice results. Therefore,
-violating one of the holy rules of deconvolution, I applied [BlurXTerminator]
-once more disabling stellar sharpening, selecting PSF diameter 5 and boosting
-non-stellar sharpening to 0.6. I removed the mask and ran [NoiseXTerminator]
-once again to smooth out a subtle noise that had surfaced in the background and
-some regions of the nebula.
+**CurvesTransformation** to boost the red channel so as to make sure that the
+red would remain prominent enough in the subsequent steps. I temporarily
+disabled the mask to apply the **PixelMath** formula that converts RGB into the
+Foraxx palette. I reenabled the mask to increase the saturation in two steps
+using **CurvesTransformation**. I also wanted to enhance the nebula's structure
+a little, but neither **UnsharpMask** nor **LocalHistogramEqualization** seemed
+to produce nice results. Therefore, violating one of the holy rules of
+deconvolution, I applied [BlurXTerminator] once more disabling stellar
+sharpening, selecting PSF diameter 5 and boosting non-stellar sharpening to 0.6.
+I removed the mask and ran [NoiseXTerminator] once again to smooth out a subtle
+noise that had surfaced in the background and some regions of the nebula.
 
 I stretched the stars using Seti Astro's **Star Stretch**. I enabled green noise
 removal and increased the stretch amount to 5.5 given that the nebula is
