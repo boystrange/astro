@@ -1,6 +1,30 @@
+- key: 2025-markarian
+  title: "Markarian's Chain"
+  objects:
+    - M86
+    - M87
+    - M88
+    - M84
+    - M99
+    - NGC 4440
+  sessions:
+    - 2025-03-16
+    - 2025-03-17
+    - 2025-03-18
+    - 2025-03-19
+    - 2025-03-20
+    - 2025-03-21
+  integration: 17.9
+  light-frames: 358
+  scope: Askar FMA180 Pro
+  camera: ASI533MC Pro
+  filter: Optolong L-PRO
+  href: https://en.wikipedia.org/wiki/Markarian%27s_Chain
+
 - key: 2025-M44
   title: "Beehive Open Cluster"
-  main-object: M44
+  objects:
+    - M44
   sessions:
     - 2025-03-16
   integration: 1.73
@@ -8,11 +32,12 @@
   scope: Askar FMA180 Pro
   camera: ASI533MC Pro
   filter: Optolong L-PRO
+  href: https://en.wikipedia.org/wiki/Beehive_Cluster
 
 - key: 2025-moon-mars
   title:        "Mars and Moon Conjunction"
-  main-object:  Moon
-  other-objects:
+  objects:
+    - Moon
     - Mars
   sessions:
     - 2025-03-08
@@ -23,8 +48,8 @@
 
 - key: 2025-seagull-nebula
   title:  "Seagull Nebula"
-  main-object: IC 2177
-  other-objects:
+  objects:
+    - IC 2177
     - VdB95
   sessions:
     - 2025-03-02
@@ -36,10 +61,12 @@
   scope: Askar FMA180 Pro
   camera: ASI533MC Pro
   filter: Optolong L-ULTIMATE
+  href: https://en.wikipedia.org/wiki/IC_2177
 
 - key: 2024-rosette
   title: "Rosette Nebula"
-  main-object:  Caldwell 49
+  objects:
+    - Caldwell 49
   sessions:
     - 2024-12-26
     - 2024-12-27
@@ -51,10 +78,11 @@
   camera: ASI533MC Pro
   reducer: 0.8
   filter: Optolong L-ENHANCE
+  href: https://en.wikipedia.org/wiki/Rosette_Nebula
 
 - key: 2024-helix
   title: "Helix Nebula"
-  main-object:
+  objects:
   sessions:
     - 2024-08-12
     - 2024-08-13
@@ -69,10 +97,12 @@
   filter: Optolong L-ENHANCE
   light-frames: 300
   integration: 15
+  href: https://en.wikipedia.org/wiki/Helix_Nebula
 
 - key: 2024-western-veil
   title: "Western Veil Nebula"
-  main-object: NGC 6960
+  objects:
+    - NGC 6960
   sessions:
     - 2024-07-09
     - 2024-07-10
@@ -83,11 +113,12 @@
   light-frames: 218
   flat-frames: 60
   integration: 10.9
+  href: https://en.wikipedia.org/wiki/Veil_Nebula
 
 - key: 2024-leo-triplet
   title: "Leo Triplet"
-  main-object: NGC 3628
-  other-objects:
+  objects:
+    - NGC 3628
     - M65
     - M66
   sessions:
@@ -97,11 +128,12 @@
   camera: ASI533MC Pro
   reducer: 0.8
   filter: SvBony UV-IR cut
+  href: https://en.wikipedia.org/wiki/Leo_Triplet
 
 - key: 2024-M46
   title: "M46"
-  main-object: M46
-  other-objects:
+  objects:
+    - M46
     - NGC 2439
     - NGC 2425
   sessions:
@@ -111,11 +143,12 @@
   camera: ASI533MC Pro
   reducer: 0.8
   filter: SvBony UV-IR cut
+  href: https://en.wikipedia.org/wiki/Messier_46
 
 - key: 2024-bodes-galaxy
   title:        "Bode's Galaxy and Cigar Galaxy"
-  main-object:  M81
-  other-objects:
+  objects:
+    - M81
     - M82
   sessions:
     - 2024-02-13
@@ -124,3 +157,4 @@
   camera: ASI533MC Pro
   reducer: 0.8
   filter: SvBony UV-IR cut
+  href: https://en.wikipedia.org/wiki/Messier_81
