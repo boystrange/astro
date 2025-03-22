@@ -79,7 +79,7 @@ introduced and that could later be mistaken for a star. Then, I ran
 [StarXTerminator] to remove the stars.
 
 There were some residual artifacts around the moon, which I had to remove with
-**CloneStamp**. Finally, I used Seti Astro's [StarStretch] to stretch the stars.
+**CloneStamp**. Finally, I used [Seti Astro]'s [StarStretch] to stretch the stars.
 I enabled the option to remove the green noise and I **decreased the stretch
 amount to 4** so as to reduce the amount of artifacts that became visible after
 the stretching and also not to have the dimmest stars visible. The point was
@@ -164,7 +164,4 @@ session, I accidentally saved one frame which later revealed the trail (and some
 lights) of a passing plane that flew almost exactly over the giant star. What a
 bizarre coincidence!
 
-[BlurXTerminator]: https://www.rc-astro.com/software/bxt/
-[StarXTerminator]: https://www.rc-astro.com/software/sxt/
-[ImageBlend]: https://cosmicphotons.com/scripts/
-[StarStretch]: https://www.setiastro.com/pjsr-scripts
+{% include links.md %}

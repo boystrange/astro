@@ -29,7 +29,7 @@ border were the integration was only partial.
 
 I shot the target when it was high in the sky and there was little light
 pollution, so the image didn't have a noticeable gradient. Nonetheless, I
-decided to run Seti Astro's **Automatic DBE** after having excluded any part
+decided to run [Seti Astro]'s **Automatic DBE** after having excluded any part
 with nebulosity.
 
 I then ran the standard sequence of [BlurXTerminator] (default settings),
@@ -40,7 +40,7 @@ separate the nebula from the stars.
 
 ![nebula](nebula.png){:.aside}
 
-I used Seti Astro's **Statistical Stretch** to perform the main stretch of the
+I used [Seti Astro]'s **Statistical Stretch** to perform the main stretch of the
 image. I kept the *linked stretch* option enabled, since the image had been
 color calibrated, and I lowered the target median to 0.2 since the nebulosity in
 the image is quite sparse. Then I used **HostogramTransformation** to clip the
@@ -62,14 +62,11 @@ introduced in this phase.
 
 ## Star stretching and merging
 
-I used Seti Astro's **Star Stretch** to stretch the stars-only image. Since I
+I used [Seti Astro]'s **Star Stretch** to stretch the stars-only image. Since I
 wanted the stars to be prominent and colored, I bumped up the stretching amount
 to 5.5 and the color boost to 1.5, also enabling green noise removal. I obtained
 the final image using [ImageBlend].
 
 ![annotated image](final_annotated.png)
 
-[BlurXTerminator]: https://www.rc-astro.com/software/bxt/
-[StarXTerminator]: https://www.rc-astro.com/software/sxt/
-[NoiseXTerminator]: https://www.rc-astro.com/software/nxt/
-[ImageBlend]: https://cosmicphotons.com/scripts/
+{% include links.md %}

@@ -20,7 +20,7 @@ interest in one corners. I then used [BlurXTerminator] (default settings),
 run [StarXTerminator] *after* [BlurXTerminator] to avoid getting residual
 artifacts in the stars-only image.
 
-I used Seti Astro's **Statistical Stretch** to perform the first stretch on the
+I used [Seti Astro]'s **Statistical Stretch** to perform the first stretch on the
 starless image, setting the stretch amount to 0.10. I would have liked to
 stretch the image a little bit more, but already at this level some bright
 patches started emerging in the background, and I feared they would have been
@@ -38,7 +38,7 @@ background, I enhanced the structure within the most elaborate galaxies with
 twice using **CurvesTransformation**. I removed the mask and applied
 [NoiseXTerminator] to eliminate the noise that emerged during/after stretching.
 
-I processed the stars-only image using Seti Astro's **Star Stretch** script with
+I processed the stars-only image using [Seti Astro]'s **Star Stretch** script with
 green noise removal enabled. I then merged the starless and stars-only images
 with [ImageBlend]. I rotated the image so that the "hook" of the chain pointer
 upwards and then plate solved and annotated the image.
@@ -48,7 +48,4 @@ NGC 4440 (center-bottom).
 
 ![annotated image](final_annotated.png)
 
-[BlurXTerminator]: https://www.rc-astro.com/software/bxt/
-[StarXTerminator]: https://www.rc-astro.com/software/sxt/
-[NoiseXTerminator]: https://www.rc-astro.com/software/nxt/
-[ImageBlend]: https://cosmicphotons.com/scripts/
+{% include links.md %}

@@ -19,7 +19,7 @@ Astro's **Automatic DBE** to remove the gradient from the stack and calibrated
 the colors with **SpectroPhotometricColorCalibration**. To correct the stars I
 used [BlurXTerminator], making sure to increase the halo to its maximum value
 (0.50) since all the star color lies there. I applied [NoiseXTerminator] to
-reduce the noise and then used Seti Astro's **Star Stretch** to bring the image
+reduce the noise and then used [Seti Astro]'s **Star Stretch** to bring the image
 to non-linear state. I did not select the option to remove the green noise
 though, since I feared that would have washed out the planetary nebula.
 Stretching increased the background brightness way too much, so I took it down
@@ -37,5 +37,4 @@ cluster, NGC 2425, which is much older than M46.
 
 ![M46 annotated](final_annotated.png)
 
-[BlurXTerminator]: https://www.rc-astro.com/software/bxt/
-[NoiseXTerminator]: https://www.rc-astro.com/software/nxt/
+{% include links.md %}

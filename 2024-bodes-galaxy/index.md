@@ -1,4 +1,4 @@
-# Bode's Galaxy and Cigar Galaxy -- M81 and M82
+# Bode's Galaxy and Cigar Galaxy
 
 13 February 2024
 
@@ -20,7 +20,7 @@ galaxies so that they did not contribute to the background model.
 I applied [BlurXTerminator], [StarXTerminator] and [NoiseXTerminator] to
 deconvolve, reduce noise and separate the galaxies from the stars.
 
-I used Seti Astro's **Statistical Stretch** to stretch the starless image to
+I used [Seti Astro]'s **Statistical Stretch** to stretch the starless image to
 non-linear state, using 0.10 as target background level. I then increased
 contrast with a gentle curve in **GHS** (stretch factor: 0.6, local intensity:
 6.39, symmetry point: 0.24, highlights protection: 0.38), looking at the spiral
@@ -41,7 +41,7 @@ saturation in two steps using **CurvesTransformation**. The colors in both M81
 and M82 are subtle but pleasing, especially the blue spiral arms in the former
 galaxy.
 
-I went ahead stretching the stars-only image using Seti Astro's **Star
+I went ahead stretching the stars-only image using [Seti Astro]'s **Star
 Stretch**, also enabling green noise reduction. I then obtained the final image
 using [ImageBlend].
 
@@ -55,7 +55,4 @@ actually a galaxy called **Holmberg IX** and catalogued PGC 28757!
 
 ![final annotated](final_annotated.png)
 
-[BlurXTerminator]: https://www.rc-astro.com/software/bxt/
-[StarXTerminator]: https://www.rc-astro.com/software/sxt/
-[NoiseXTerminator]: https://www.rc-astro.com/software/nxt/
-[ImageBlend]: https://cosmicphotons.com/scripts/
+{% include links.md %}

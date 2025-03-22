@@ -29,7 +29,7 @@ any green noise.
 Any attempt at separating the stars from the background nebulosity always left a
 very noisy background full of artifacts. Also, there wasn't really much to
 stretch in the nebulosity itself. Therefore I decided to proceed without
-[StarXTerminator]. I used Seti Astro's **Star Stretch** tool to bring the whole
+[StarXTerminator]. I used [Seti Astro]'s **Star Stretch** tool to bring the whole
 image to non-linear state. I decreased the stretching amount to 4 and increased
 the color boost to 1.2. The image ended up being very bright, so I used
 **HistogramTransformation** (shadows: 0.25, midtones: 0.43) to bring it back to
@@ -38,6 +38,4 @@ processing.
 
 ![annotated image](final_annotated.png)
 
-[BlurXTerminator]: https://www.rc-astro.com/software/bxt/
-[StarXTerminator]: https://www.rc-astro.com/software/sxt/
-[NoiseXTerminator]: https://www.rc-astro.com/software/nxt/
+{% include links.md %}

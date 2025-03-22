@@ -45,7 +45,7 @@ the background noise.
 
 ![Foraxx palette](foraxx.png){:.aside}
 
-I used Seti Astro's **Statistical Stretch** (target median = 0.20, unlinked
+I used [Seti Astro]'s **Statistical Stretch** (target median = 0.20, unlinked
 stretch) to bring the image to non-linear state. Then I applied **PixelMath** to
 convert the RGB image into the Foraxx palette.
 
@@ -86,7 +86,7 @@ reddish cast that was left on the image. The nebula was done!
 
 ## Star stretching and blending
 
-Star processing was easy thanks to Seti Astro's **Star Stretch** script. I made
+Star processing was easy thanks to [Seti Astro]'s **Star Stretch** script. I made
 sure to enable green noise removal and I increased the stretching of stars to
 5.5 (many of them were really tiny or faint). I then merged the nebula and the
 stars using [ImageBlend] and I rotated the image by 180°, so that the seagull
@@ -100,7 +100,4 @@ reflection nebula **VdB95**.
 
 ![final annotated](final_annotated.png)
 
-[BlurXTerminator]: https://www.rc-astro.com/software/bxt/
-[StarXTerminator]: https://www.rc-astro.com/software/sxt/
-[NoiseXTerminator]: https://www.rc-astro.com/software/nxt/
-[ImageBlend]: https://cosmicphotons.com/scripts/
+{% include links.md %}

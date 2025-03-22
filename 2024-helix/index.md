@@ -27,7 +27,7 @@ cropping. Therefore, I used **AutomaticBackgroundExtractor** (function degree:
 does a fantastic job in bringing out the faintest structure of the outer, faint
 rings surrounding the nebula.
 
-I ended this processing phase stretching the image with Seti Astro's
+I ended this processing phase stretching the image with [Seti Astro]'s
 **Statistical Stretch** selecting the unlinked mode. Becase the nebula occupies
 a small portion of the frame, I lowered the target median to 0.03.
 
@@ -57,7 +57,7 @@ sharpening, selecting PSF diameter 5 and boosting non-stellar sharpening to 0.6.
 I removed the mask and ran [NoiseXTerminator] once again to smooth out a subtle
 noise that had surfaced in the background and some regions of the nebula.
 
-I stretched the stars using Seti Astro's **Star Stretch**. I enabled green noise
+I stretched the stars using [Seti Astro]'s **Star Stretch**. I enabled green noise
 removal and increased the stretch amount to 5.5 given that the nebula is
 isolated and the stars are dim in this region of the sky. I merged nebula and
 stars with [ImageBlend].
@@ -70,7 +70,4 @@ When I chose the rotation of the nebula I didn't know that the frame would end
 up almost perfectly squared to the equatorial coordinate system that is visible
 in the annotated image above <i class="fa-regular fa-face-smile"></i>.
 
-[BlurXTerminator]: https://www.rc-astro.com/software/bxt/
-[StarXTerminator]: https://www.rc-astro.com/software/sxt/
-[NoiseXTerminator]: https://www.rc-astro.com/software/nxt/
-[ImageBlend]: https://cosmicphotons.com/scripts/
+{% include links.md %}

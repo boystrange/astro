@@ -34,7 +34,7 @@ most of the color lies there. So I lowered "sharpen stars" to 0.2 and increased
 "adjust star halos" to 0.5. Next I used [NoiseXTerminator] to smooth out the
 background noise.
 
-I stretched the image using Seti Astro's **Star Stretch**, bumping up both the
+I stretched the image using [Seti Astro]'s **Star Stretch**, bumping up both the
 stretch amount to 5.5 and the "color boost" to 1.5. I also enabled green noise
 removal, which I noticed in some star halos. I then used
 **CurvesTransformation** to further saturate the star colors in two steps.
@@ -59,5 +59,4 @@ comparison of the two runs on one part of M44 (hover to see the repaired
 version). Overall I'm still not sure I used the script to the best of its
 potential, but it seemed to slightly improve the final outcome.
 
-[BlurXTerminator]: https://www.rc-astro.com/software/bxt/
-[NoiseXTerminator]: https://www.rc-astro.com/software/nxt/
+{% include links.md %}

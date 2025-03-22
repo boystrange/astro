@@ -15,7 +15,7 @@ an SvBony UV-IR cut filter. It depicts the famous trio of galaxies known as the
 
 Before cropping the master light to remove stacking artifacts around the border
 I used **SpectroPhotometricColorCalibration** to calibrate the colors. Then, I
-applied Seti Astro's **Automatic DBE**  to remove the gradient. I excluded the
+applied [Seti Astro]'s **Automatic DBE**  to remove the gradient. I excluded the
 three main galaxies as well as the region next to NGC 3628 where the "tail" of
 the galaxy was supposed to be. I was really hoping to bring it out in the final
 image.
@@ -26,7 +26,7 @@ to tame the noise in the starless image.
 
 ![galaxies stretched](galaxies.png){:.aside}
 
-I brought the starless image to the non-linear state using Seti Astro's
+I brought the starless image to the non-linear state using [Seti Astro]'s
 **Statistical Stretch** with target background 0.10. I then used **GHS** to
 apply a very gentle S-curve so as to increase the contrast between the
 background and the faint tail of NGC 3628 (stretch factor: 0.52, local
@@ -42,7 +42,7 @@ coloring popping up, which I removed with an application of **SCNR**. I then
 slightly increased saturation with **CurvesTransformation** and removed the
 noise that had appeared with another application of [NoiseXTerminator].
 
-I stretched the stars using Seti Astro's **Star Stretch** (increasing color
+I stretched the stars using [Seti Astro]'s **Star Stretch** (increasing color
 saturation to 1.5 and enabling green noise removal) and combined them with the
 galaxies using [ImageBlend].
 
@@ -53,7 +53,4 @@ the fact that many "dots" of light in this image are not stars, but galaxies!
 
  ![leo triplet annotated](final_annotated.png)
 
-[BlurXTerminator]: https://www.rc-astro.com/software/bxt/
-[StarXTerminator]: https://www.rc-astro.com/software/sxt/
-[NoiseXTerminator]: https://www.rc-astro.com/software/nxt/
-[ImageBlend]: https://cosmicphotons.com/scripts/
+{% include links.md %}

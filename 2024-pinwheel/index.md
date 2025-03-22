@@ -11,7 +11,7 @@ I stacked and drizzled the image using **WBPP** and calibrated colors with
 **SpectroPhotometricColorCalibration**, after having selected a dark patch of
 the image as region of interest. After cropping the image with **DynamicCrop**,
 I used **AutomaticBackgroundExtractor** (function degree: 4) to remove the light
-gradient. I found that neither Seti Astro's **Automatic DBE** nor
+gradient. I found that neither [Seti Astro]'s **Automatic DBE** nor
 **DynamicBackgroundExtractor** with carefully placed sample points did a good
 job, both leaving a dim greenish halo around the border of the image.
 ****AutomaticBackgroundExtractor**, on the contrary, produced an almost
@@ -24,7 +24,7 @@ I went ahead using [BlurXTerminator] (default settings) and [NoiseXTerminator]
 green noise. I didn't use [StarXTerminator] at this stage, though, for it turned
 out to remove colored patched from the inner parts of the galaxy at least on the
 drizzled version of the image. Therefore I first brought the image to the
-non-linear state using Seti Astro's **Statistical Stretch** (target median: 0.1)
+non-linear state using [Seti Astro]'s **Statistical Stretch** (target median: 0.1)
 and only then separated galaxies and stars with [StarXTerminator].
 
 I darkened the background a bit using **HistogramTransformation** (shadows:
@@ -41,7 +41,4 @@ stars using [ImageBlend].
 
 ![annotated image](final_annotated.png)
 
-[BlurXTerminator]: https://www.rc-astro.com/software/bxt/
-[StarXTerminator]: https://www.rc-astro.com/software/sxt/
-[NoiseXTerminator]: https://www.rc-astro.com/software/nxt/
-[ImageBlend]: https://cosmicphotons.com/scripts/
+{% include links.md %}

@@ -63,6 +63,20 @@
   filter: Optolong L-ULTIMATE
   href: https://en.wikipedia.org/wiki/IC_2177
 
+- key: 2025-M35
+  title: M35
+  objects:
+    - M35
+    - NGC 2158
+  sessions:
+    - 2025-02-05
+  integration: 2
+  scope: SharpStar 76EDPH
+  reducer: 0.8
+  filter: Astronomik L2
+  camera: ASI585MC
+  href: https://en.wikipedia.org/wiki/Messier_35
+
 - key: 2024-rosette
   title: "Rosette Nebula"
   objects:

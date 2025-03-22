@@ -43,7 +43,7 @@ samples all along the border of the image.
 I then used [BlurXTerminator] (default settings), [NoiseXTerminator] (strength:
 0.9, iterations:
 5) and [StarXTerminator] (default settings). I brought the starless image to the
-non-linear state using Seti Astro's **Statistical Stretch**. The recommended
+non-linear state using [Seti Astro]'s **Statistical Stretch**. The recommended
 setting for stretching nebulae with this script is 0.25, but I found that such
 amount is too much in this case, probably because the nebula fills the frame
 almost entirely. Therefore, I lowered the stretch amount to 0.15 to prevent
@@ -82,7 +82,7 @@ upper-right corner) and [NoiseXTerminator] once more.
 
 ## Star stretching, merge and annotation
 
-To stretch the stars I used Seti Astro's **Star Stretch** script with default
+To stretch the stars I used [Seti Astro]'s **Star Stretch** script with default
 settings. I then merged the nebula and the stars using [ImageBlend].
 
 ![final immage annotated](final_annotated.png)
@@ -99,7 +99,4 @@ discussed in this page more.
 <iframe class="aside" width="560" height="315" src="https://www.youtube.com/embed/0zIyk7q5ivs?si=cs_5MTuC8OQ50muz&amp;start=4399" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </center>
 
-[BlurXTerminator]: https://www.rc-astro.com/software/bxt/
-[StarXTerminator]: https://www.rc-astro.com/software/sxt/
-[NoiseXTerminator]: https://www.rc-astro.com/software/nxt/
-[ImageBlend]: https://cosmicphotons.com/scripts/
+{% include links.md %}
