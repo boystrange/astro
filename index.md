@@ -10,7 +10,7 @@ nights as well. This journal is meant to be just that.
 <div class="row">
     {% for target in site.data.log %}
         <div class="col">
-            <a class="card shadow" href="{{ target.key }}/index.html">
+            <a class="card shadow" href="{{ target.key }}">
                 <img alt="{{ target.title }}" src="{{ target.key }}/final.png"/>
                 <ul class="details">
                     <li><b>{{ target.title }}</b></li>
@@ -42,6 +42,21 @@ nights as well. This journal is meant to be just that.
     {% endfor %}
 </div>
 {{ targets }}
+
+## Messier Objects
+
+<ul class="messier">
+{% for i in (1..110) %}
+    {% assign object = "M" | append: i %}
+    {% for target in site.data.log %}
+        {% if target.objects contains object %}
+            <li>
+                {{ object }} in <a href="{{ target.key }}">{{ target.title }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+</ul>
 
 ## Tools
 

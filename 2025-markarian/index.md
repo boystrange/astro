@@ -7,6 +7,9 @@
 During the second half of March 2025, in lack of better southern targets
 crossing the meridian around midnight, I extensively shot the Markarian's chain
 using the Askar FMA180 Pro with the ASI533MC Pro and the Optolong L-PRO filter.
+I ended up collecting 358 light frames, way more than necessary for this target
+at the focal length of the FMA180 Pro, but I wanted to be sure that the drizzled
+image was as good as the non-drizzled one.
 
 ![galaxies](galaxies.png){:.aside}
 

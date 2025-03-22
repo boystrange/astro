@@ -115,6 +115,21 @@
   integration: 10.9
   href: https://en.wikipedia.org/wiki/Veil_Nebula
 
+- key: 2024-pinwheel
+  title: Pinwheel Galaxy
+  objects:
+    - M101
+  sessions:
+    - 2024-06-05
+    - 2024-06-06
+    - 2024-06-07
+  integration: 10
+  scope: SharpStar 76EDPH
+  camera: ASI533MC Pro
+  reducer: 0.8
+  filter: Astronomik L2
+  href: https://en.wikipedia.org/wiki/Pinwheel_Galaxy
+
 - key: 2024-leo-triplet
   title: "Leo Triplet"
   objects:
@@ -127,7 +142,7 @@
   scope: SharpStar 76EDPH
   camera: ASI533MC Pro
   reducer: 0.8
-  filter: SvBony UV-IR cut
+  filter: Astronomik L2
   href: https://en.wikipedia.org/wiki/Leo_Triplet
 
 - key: 2024-M46
@@ -142,7 +157,7 @@
   scope: SharpStar 76EDPH
   camera: ASI533MC Pro
   reducer: 0.8
-  filter: SvBony UV-IR cut
+  filter: Astronomik L2
   href: https://en.wikipedia.org/wiki/Messier_46
 
 - key: 2024-bodes-galaxy
@@ -156,5 +171,5 @@
   scope: SharpStar 76EDPH
   camera: ASI533MC Pro
   reducer: 0.8
-  filter: SvBony UV-IR cut
+  filter: Astronomik L2
   href: https://en.wikipedia.org/wiki/Messier_81
