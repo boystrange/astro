@@ -99,6 +99,25 @@
   integration: 15
   href: https://en.wikipedia.org/wiki/Helix_Nebula
 
+- key: 2024-M24
+  title: Small Sagittarius Star Cloud
+  objects:
+    - M24
+    - NGC 6603
+    - Sh2-41
+    - IC 1283
+    - NGC 6567
+  sessions:
+    - 2024-07-13
+    - 2024-07-14
+  scope: Askar FMA180 Pro
+  camera: ASI585MC
+  reducer: 0.8
+  filter: Astronomik L2
+  light-frames: 215
+  integration: 3.58
+  href: https://en.wikipedia.org/wiki/Small_Sagittarius_Star_Cloud
+
 - key: 2024-western-veil
   title: "Western Veil Nebula"
   objects:
