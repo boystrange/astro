@@ -77,6 +77,19 @@
   camera: ASI585MC
   href: https://en.wikipedia.org/wiki/Messier_35
 
+- key: M67
+  title: M67
+  objects:
+    - M67
+  sessions:
+    - 2025-02-05
+  integration: 1
+  scope: SharpStar 76EDPH
+  reducer: 0.8
+  filter: Astronomik L2
+  camera: ASI585MC
+  href: https://en.wikipedia.org/wiki/Messier_67
+
 - key: 2024-rosette
   title: "Rosette Nebula"
   objects:
@@ -93,6 +106,25 @@
   reducer: 0.8
   filter: Optolong L-ENHANCE
   href: https://en.wikipedia.org/wiki/Rosette_Nebula
+
+- key: M42
+  title: Great Orion Nebula
+  objects:
+    - M42
+    - M43
+  sessions:
+    - 2024-12-24
+    - 2024-12-25
+    - 2024-12-26
+    - 2024-12-27
+    - 2024-12-28
+    - 2024-12-29
+  integration: 10
+  scope: SharpStar 76EDPH
+  reducer: 0.8
+  camera: ASI533MC Pro
+  filter: Optolong L-ENHANCE
+  href: https://en.wikipedia.org/wiki/Orion_Nebula
 
 - key: 2024-helix
   title: "Helix Nebula"
