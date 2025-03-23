@@ -42,25 +42,26 @@ a clean stars-only image.
 
 To recover some of the structure in the inner core of the nebula I used
 **HDRMultiscaleTransform** (number of layers: 9, on lightness only). Now I
-wanted to stretch the image a little bit more and to try rebalance the colors so
-as to get rid of the green tint and turn the inner core from salmon-orange to
+wanted to stretch the image a little bit more and to rebalance the colors so as
+to get rid of the green tint and turn the inner core from salmon-orange to
 purplish. I used **GHS** on the red channel (stretch factor: 0.8, local
 intensity: 0.8, symmetry point: 0.18) to boost the red. The I applied **GHS** on
 the blue channel (stretch factor: 0.5, local intensity: 1.7, symmetry point:
-0.3) to boost the blue. Finally, I applied **GHS** in RGB mode (stretch factor:
-0.5, local intensity: 2.2, symmetry point: 0.2) to stretch the image a little
-bit more and bring out some dim details in the surrounding dust cloud. When the
-dust "finger" in the lower-left corner of the image is visible, that for me is
-the indicator that the stretch is enough.
+0.3) to boost the blue. Finally, I applied **GHS** in *lightness* mode (stretch
+factor: 0.5, local intensity: 2.2, symmetry point: 0.12) to stretch the image a
+little bit more and bring out some dim details in the surrounding dust cloud,
+but without altering the color balance too much. When the dust "finger" in the
+lower-left corner of the image is visible, that for me is the indicator that the
+stretch is enough.
 
 ![nebula only](nebula.png){:.aside}
 
 I created a mask with **RangeSelection** (lower limit: 0.15, smoothness: 66) to
 protect the darkest regions of the image. I applied **CurvesTransformation**
-(input: 0.45, output: 0.55) to boost the colors. With the mask still applied, I
-also used **LocalHistogramEqualization** (kernel radius: 150, amount: 0.2) to
-increase contrast between different regions of the core. At this point some
-traces of the green tint had resurfaced, so I applied
+(input: 0.45, output: 0.55) twice to boost the colors. With the mask still
+applied, I also used **LocalHistogramEqualization** (kernel radius: 150, amount:
+0.2) to increase contrast between different regions of the core. At this point
+some traces of the green tint had resurfaced, so I applied
 **BackgroundNeutralization** again followed by **SCNR**. I concluded the work on
 the nebula with an application of [NoiseXTerminator] (same settings as before).
 
