@@ -1,9 +1,6 @@
 # Astrophotography Journal
 
-When you become passionate about astrophotography, you want to do it all the
-time. Since I live in a place where most nights are cloudy or foggy, I had to
-find an alternative way to "do astrophotography" in at least some of those
-nights as well. This journal is meant to be just that.
+A collection of my best astrophotographs and of their workflows.
 
 ## Targets
 
