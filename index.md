@@ -7,7 +7,7 @@ A collection of my best astrophotographs and of their workflows.
 <div class="row">
     {% for target in site.data.log %}
         <div class="col">
-            <a class="card shadow" href="{{ target.key }}">
+            <a class="card" href="{{ target.key }}">
                 <img alt="{{ target.title }}" src="{{ target.key }}/final.png"/>
                 <ul class="details">
                     <li><b>{{ target.title }}</b></li>
