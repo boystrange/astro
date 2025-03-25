@@ -107,6 +107,21 @@
   filter: Optolong L-ENHANCE
   href: https://en.wikipedia.org/wiki/Rosette_Nebula
 
+- key: 2024-pleiades
+  title: Pleiades
+  objects:
+    - M45
+  sessions:
+    - 2024-12-30
+    - 2024-12-31
+    - 2025-01-01
+  integration: 11.58
+  scope: SharpStar 76EDPH
+  camera: ASI533MC Pro
+  reducer: 0.8
+  filter: Astronomik L2
+  href: https://en.wikipedia.org/wiki/Pleiades
+
 - key: M42
   title: Great Orion Nebula
   objects:
