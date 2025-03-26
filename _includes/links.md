@@ -3,3 +3,4 @@
 [NoiseXTerminator]: https://www.rc-astro.com/software/nxt/
 [ImageBlend]: https://cosmicphotons.com/scripts/
 [Seti Astro]: https://www.setiastro.com/
+[EZ Processing Suite]: https://elveteek.ch/en/pixinsight/ez-processing-suite

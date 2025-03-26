@@ -21,9 +21,10 @@ I applied [BlurXTerminator] (default settings) to reduce the stars and used
 **SCNR** to remove the green noise, followed by [NoiseXTerminator] (denoise:
 0.9, iterations: 5) to smooth out the remaining noise. I did not remove the
 stars at this stage because [StarXTerminator] was leaving some residual
-nebulosity in the stars-only image. I stretched the image using [EZ Soft
-Stretch] (target median: 0.2). At that point I could use [StarXTerminator] (with
-*unscreen* enabled) to obtain a fair separation between stars and nebulosity.
+nebulosity in the stars-only image. I stretched the image using **EZ Soft
+Stretch** (target median: 0.2) from [EZ Processing Suite]. At that point I could
+use [StarXTerminator] (with *unscreen* enabled) to obtain a fair separation
+between stars and nebulosity.
 
 At this point the starless image had a fairly strong reddish tint, which I
 removed applying **SCNR** on the red channel. The tint decreased substantially,
