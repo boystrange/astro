@@ -43,7 +43,7 @@ separate the nebula from the stars.
 I used [Seti Astro]'s **Statistical Stretch** to perform the main stretch of the
 image. I kept the *linked stretch* option enabled, since the image had been
 color calibrated, and I lowered the target median to 0.2 since the nebulosity in
-the image is quite sparse. Then I used **HostogramTransformation** to clip the
+the image is quite sparse. Then I used **HistogramTransformation** to clip the
 lower, unused part of the dynamic range. Before focusing on the nebula, I used
 **CurvesTransformation** to apply a very gentle S curve on the luminosity,
 pivoting the curve near the dimmest regions. This slightly darkened the
@@ -68,5 +68,18 @@ to 5.5 and the color boost to 1.5, also enabling green noise removal. I obtained
 the final image using [ImageBlend].
 
 ![annotated image](final_annotated.png)
+
+## Cygnus loop
+
+![wide-field image](loop.png){:.aside}
+
+Using the FMA180 Pro instead of the SharpStar 76EDPH I was able to capture the
+whole Cygnus loop, which includes the Western veil. Obviously this images makes
+it more difficult to appreciate the details, but it is useful to appreciate the
+size of this supernova remnant in its entirety. The processing is essentially
+the same described above for the Western vail, with the exception that I skipped
+the application of **UnsharpMask** since there were no details worth sharpening.
+
+![annotated wide-field image](loop_annotated.png)
 
 {% include links.md %}
