@@ -141,6 +141,22 @@
   filter: Optolong L-ENHANCE
   href: https://en.wikipedia.org/wiki/Orion_Nebula
 
+- key: 2024-horsehead
+  title: "Horsehead Nebula and Flame Nebula"
+  objects:
+  sessions:
+    - 2024-11-22
+    - 2024-11-23
+    - 2024-11-30
+    - 2024-12-01
+    - 2024-12-02
+  integration: 16.35
+  scope: SharpStar 76EDPH
+  reducer: 0.8
+  filter: Optolong L-ENHANCE
+  camera: ASI533MC Pro
+  href:
+
 - key: 2024-helix
   title: "Helix Nebula"
   objects:
