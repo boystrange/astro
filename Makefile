@@ -24,7 +24,7 @@ IMAGES = \
 
 THUMBNAILS = $(IMAGES:%=%.png)
 
-all: $(THUMBNAILS)
+all:
 	bundle exec jekyll serve --drafts
 
 %.png: %/final.png

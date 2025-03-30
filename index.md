@@ -8,7 +8,7 @@ fa-creative-commons"></i> <i class="fa-brands fa-creative-commons-by"></i> <i
 <div class="gallery">
     {% for target in site.data.log %}
         <div class="target shadow">
-            <h5 class="target-title">{{ target.title }}</h5>
+            <p class="target-title">{{ target.title }}</p>
             <a href="{{ target.key }}">
                 <img alt="{{ target.title }}" src="{{ target.key }}/final.png"/>
             </a>
