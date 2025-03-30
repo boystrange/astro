@@ -57,8 +57,8 @@ FMA180 Pro, so as to have both the nebula and [M35](../2025-M35) in the same
 frame. Here is the result of that attempt, in which I collected 146 x 300s light
 frames resulting in slightly more than 12 hours of integration time. The
 processing is very similar to that of the Jellyfish alone. However, I lowered
-the target median used in **Statistical Stretch** since the nebula here covers a
-much smaller portion of the image. Also, I had to work harder with the
+the target median used in **Statistical Stretch** to 0.15 since the nebula here
+covers a much smaller portion of the image. Also, I had to work harder with the
 **CloneStamp** tool not only to remove the halo around Propus, but also to get
 rid of residual artifacts left behind by [StarXTerminator] in the densely packed
 cluster NGC 2158.
