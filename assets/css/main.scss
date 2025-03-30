@@ -5,7 +5,13 @@
 @import url('https://use.fontawesome.com/releases/v6.5.0/css/all.css');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
-@import "https://cdn.simplecss.org/simple.min.css";
+@import "https://cdn.jsdelivr.net/npm/hiq@4.2.11/dist/hiq.min.css";
+
+:root {
+    --hiq-font-family-base: "EB Garamond";
+    --hiq-unitless-min-font-size: 14;
+    --hiq-unitless-max-font-size: 20;
+}
 
 .gallery {
     display: flex;
@@ -20,7 +26,7 @@
     position: relative;
     border-radius: 6px;
     img {
-        display: block;
+        display: block !important;
         height: 200px;
         margin: 0px;
         padding: 0px;
