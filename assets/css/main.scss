@@ -11,6 +11,7 @@
     --hiq-font-family-base: "EB Garamond";
     --hiq-unitless-min-font-size: 14;
     --hiq-unitless-max-font-size: 20;
+    --hiq-border-radius: 0;
 }
 
 .gallery {
@@ -24,7 +25,6 @@
 .target {
     padding: 0px;
     position: relative;
-    border-radius: 6px;
     img {
         display: block !important;
         height: 200px;
