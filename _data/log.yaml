@@ -90,6 +90,37 @@
   camera: ASI585MC
   href: https://en.wikipedia.org/wiki/Messier_67
 
+- key: 2025-jellyfish
+  title: Jellyfish Nebula
+  objects:
+  sessions:
+    - 2025-01-14
+    - 2025-01-15
+    - 2025-01-16
+    - 2025-01-17
+    - 2025-01-18
+  integration: 18.17
+  scope: SharpStar 76EDPH
+  reducer: 0.8
+  filter: Optolong L-ULTIMATE
+  camera: ASI533MC Pro
+  href:
+
+- key: 2024-pleiades
+  title: Pleiades
+  objects:
+    - M45
+  sessions:
+    - 2024-12-30
+    - 2024-12-31
+    - 2025-01-01
+  integration: 11.58
+  scope: SharpStar 76EDPH
+  camera: ASI533MC Pro
+  reducer: 0.8
+  filter: Astronomik L2
+  href: https://en.wikipedia.org/wiki/Pleiades
+
 - key: 2024-rosette
   title: "Rosette Nebula"
   objects:
@@ -106,21 +137,6 @@
   reducer: 0.8
   filter: Optolong L-ENHANCE
   href: https://en.wikipedia.org/wiki/Rosette_Nebula
-
-- key: 2024-pleiades
-  title: Pleiades
-  objects:
-    - M45
-  sessions:
-    - 2024-12-30
-    - 2024-12-31
-    - 2025-01-01
-  integration: 11.58
-  scope: SharpStar 76EDPH
-  camera: ASI533MC Pro
-  reducer: 0.8
-  filter: Astronomik L2
-  href: https://en.wikipedia.org/wiki/Pleiades
 
 - key: M42
   title: Great Orion Nebula
@@ -144,6 +160,7 @@
 - key: 2024-horsehead
   title: "Horsehead Nebula and Flame Nebula"
   objects:
+    - Barnard 33
   sessions:
     - 2024-11-22
     - 2024-11-23
@@ -156,6 +173,20 @@
   filter: Optolong L-ENHANCE
   camera: ASI533MC Pro
   href:
+
+- key: 2024-M33
+  title: "Triangulum Galaxy"
+  object:
+    - M33
+  sessions:
+    - 2024-10-29
+    - 2024-10-30
+  integration: 4.7
+  scope: SharpStar 76EDPH
+  reducer: 0.8
+  filter: Astronomik L2
+  camera: ASI533MC Pro
+  href: https://en.wikipedia.org/wiki/Triangulum_Galaxy
 
 - key: 2024-helix
   title: "Helix Nebula"
