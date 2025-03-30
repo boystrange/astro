@@ -1,5 +1,7 @@
 # Jellyfish Nebula
 
+January 2025
+
 ![final image](final.png)
 
 ## Acquisition
@@ -45,5 +47,26 @@ I didn't like the final result. For this reason I fell back using the Foraxx
 palette, which produces a more monotone image but with instense colors.
 
 ![annotated image](final_annotated.png)
+
+## Wide-field version
+
+![wide-field image](final_wide.png){:.aside}
+
+At the end of January 2025 I also tried imaging the jellyfish nebula with the
+FMA180 Pro, so as to have both the nebula and [M35](../2025-M35) in the same
+frame. Here is the result of that attempt, in which I collected 146 x 300s light
+frames resulting in slightly more than 12 hours of integration time. The
+processing is very similar to that of the Jellyfish alone. However, I lowered
+the target median used in **Statistical Stretch** since the nebula here covers a
+much smaller portion of the image. Also, I had to work harder with the
+**CloneStamp** tool not only to remove the halo around Propus, but also to get
+rid of residual artifacts left behind by [StarXTerminator] in the densely packed
+cluster NGC 2158.
+
+I'm not particularly happy of this framing, because the two interesting objects
+are too far away and close to the borders of the image. Perhaps using a 135mm
+lens would be better in this case.
+
+![wide-field annotated image](final_wide_annotated.png)
 
 {% include links.md %}

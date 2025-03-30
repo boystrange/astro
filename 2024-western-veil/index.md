@@ -74,11 +74,13 @@ the final image using [ImageBlend].
 ![wide-field image](loop.png){:.aside}
 
 Using the FMA180 Pro instead of the SharpStar 76EDPH I was able to capture the
-whole Cygnus loop, which includes the Western veil. Obviously this images makes
+whole Cygnus loop, which includes the Western veil. Obviously this image makes
 it more difficult to appreciate the details, but it is useful to appreciate the
 size of this supernova remnant in its entirety. The processing is essentially
 the same described above for the Western vail, with the exception that I skipped
 the application of **UnsharpMask** since there were no details worth sharpening.
+I also have the impression that the OIII signal is less prominent in this image,
+possibly because of the shorter integration time.
 
 ![annotated wide-field image](loop_annotated.png)
 
