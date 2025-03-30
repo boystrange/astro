@@ -1,46 +1,54 @@
 # Astrophotography Journal
 
-A collection of my best astrophotographs and of their workflows.
+All pictures are licensed under a [Creative Commons Attribution-ShareAlike 4.0
+License](https://creativecommons.org/licenses/by-sa/4.0/) <i class="fa-brands
+fa-creative-commons"></i> <i class="fa-brands fa-creative-commons-by"></i> <i
+    class="fa-brands fa-creative-commons-sa"></i>
 
-## Targets
-
-<div class="row">
+<div class="gallery">
     {% for target in site.data.log %}
-        <div class="col">
-            <a class="card" href="{{ target.key }}">
+        <div class="target shadow">
+            <h5 class="target-title">{{ target.title }}</h5>
+            <a href="{{ target.key }}">
                 <img alt="{{ target.title }}" src="{{ target.key }}/final.png"/>
-                <ul class="details">
-                    <li><b>{{ target.title }}</b></li>
-                    <li><i>Scope:</i> {{ target.scope }}</li>
-                    <li><i>Filter:</i>
-                    {% if target.filter %}
-                    {{ target.filter }}
-                    {% else %}
-                    none
-                    {% endif %}
-                    </li>
-                    <li><i>Camera:</i>
-                    {% if target.camera %}
-                    {{ target.camera }}
-                    {% else %}
-                    N/A
-                    {% endif %}
-                    </li>
-                    <li><i>Integration time:</i>
-                    {% if target.integration < 2 %}
-                    {{ target.integration | times: 60 | round }} minutes
-                    {% else %}
-                    {{ target.integration }} hours
-                    {% endif %}
-                    </li>
-                </ul>
             </a>
         </div>
+            <!-- <div class="card-content">
+                <p class="title is-4">{{ target.title }}</p>
+                <p class="subtitle is-6">{{ target.sessions | last | date: '%d %B %Y' }}</p>
+                <p>Scope: <strong>{{ target.scope }}</strong></p>
+                {% if target.filter %}
+                    <p>Filters:
+                        <strong>{{ target.filter }}</strong>
+                    </p>
+                {% endif %}
+                {% if target.camera %}
+                    <p>Camera: <strong>{{ target.camera }}</strong></p>
+                {% endif %}
+                <p>Integration time:
+                    <strong>
+                        {% if target.integration < 2 %}
+                            {{ target.integration | times: 60 | round }} minutes
+                        {% else %}
+                            {{ target.integration }} hours
+                        {% endif %}
+                    </strong>
+                </p>
+                <p>Main objects:
+                    {% for obj in target.objects %}
+                        <span class="tag is-dark">{{ obj }}</span>
+                    {% endfor %}
+                </p>
+            </div>
+            <footer class="card-footer">
+                <a class="card-footer-item" href="{{ key }}">Workflow</a>
+                <a class="card-footer-item" href="{{ target.href }}">More</a>
+            </footer> -->
+        <!-- </div> -->
     {% endfor %}
 </div>
-{{ targets }}
 
-## Messier Objects
+<!-- ## Messier Objects
 
 <ul class="messier">
 {% for i in (1..110) %}
@@ -57,9 +65,5 @@ A collection of my best astrophotographs and of their workflows.
 
 ## Tools
 
-* [PixInsight Process for RGB to Foraxx palette conversion](RGBtoForaxx.xpsm)
+* [PixInsight Process for RGB to Foraxx palette conversion](RGBtoForaxx.xpsm) -->
 
-All pictures are licensed under a [Creative Commons Attribution-ShareAlike 4.0
-License](https://creativecommons.org/licenses/by-sa/4.0/) <i class="fa-brands
-fa-creative-commons"></i> <i class="fa-brands fa-creative-commons-by"></i> <i
-    class="fa-brands fa-creative-commons-sa"></i>
