@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Seagull Nebula -- IC 2177
 
 March 2025

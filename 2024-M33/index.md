@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Triangulum Galaxy
 
 ![final image](final.png)

@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # M46
 
 2 March 2024

@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Eagle Nebula
 
 June 2024

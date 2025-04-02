@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Small Sagittarius Star Cloud
 
 July 2024

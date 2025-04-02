@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # M35
 
 6 February 2025

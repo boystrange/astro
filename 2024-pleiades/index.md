@@ -2,8 +2,6 @@
 layout: target
 ---
 
-{{ page.path }}
-
 # Pleiades
 
 December 2024 - January 2025

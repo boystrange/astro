@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Mars and the Moon
 
 8 March 2025

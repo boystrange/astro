@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # M67
 
 5 February 2025

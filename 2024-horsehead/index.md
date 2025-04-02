@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Horsehead Nebula and Flame Nebula
 
 ![final image](final.png)

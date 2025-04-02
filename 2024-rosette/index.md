@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Rosette Nebula -- Caldwell 49
 
 ![final](final.png)

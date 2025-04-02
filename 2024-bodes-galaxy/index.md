@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Bode's Galaxy and Cigar Galaxy
 
 13 February 2024

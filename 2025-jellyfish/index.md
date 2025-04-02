@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Jellyfish Nebula
 
 January 2025

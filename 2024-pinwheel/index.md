@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Pinwheel Galaxy
 
 June 2024

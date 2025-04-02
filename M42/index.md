@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Great Orion Nebula
 
 December 2024

@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Beehive Open Cluster -- M44
 
 16 March 2025

@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Western Veil Nebula -- NGC 6960
 
 July 2024

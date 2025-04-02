@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Markarian's Chain
 
 21 March 2025

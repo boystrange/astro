@@ -1,3 +1,7 @@
+---
+layout: target
+---
+
 # Helix Nebula -- NGC 7293
 
 6 September 2024
