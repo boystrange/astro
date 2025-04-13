@@ -1,3 +1,49 @@
+- key: IC443 Jellyfish Nebula/2025 SharpStar
+  title: Jellyfish Nebula
+  objects:
+    - IC443
+    - IC444
+  scope: SharpStar 76EDPH
+  filter: Optolong L-ULTIMATE
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2025-01-14
+      frames: 23
+      exposure: 300
+    - date: 2025-01-15
+      frames: 50
+      exposure: 300
+    - date: 2025-01-16
+      frames: 30
+      exposure: 300
+    - date: 2025-01-17
+      frames: 74
+      exposure: 300
+    - date: 2025-01-18
+      frames: 45
+      exposure: 300
+
+- key: IC443 Jellyfish Nebula/2025 FMA180 Pro
+  title: Jellyfish Nebula
+  objects:
+    - IC443
+    - IC444
+    - M35
+    - NGC2158
+  scope: Askar FMA180 Pro
+  filter: Optolong L-ENHANCE
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2025-01-28
+      frames: 42
+      exposure: 300
+    - date: 2025-01-29
+      frames: 53
+      exposure: 300
+    - date: 2025-01-30
+      frames: 51
+      exposure: 300
+
 - key: M24 Sagittarius Star Cloud/2024
   title: Small Sagittarius Star Cloud
   objects:
