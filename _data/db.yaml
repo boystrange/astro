@@ -1,0 +1,150 @@
+- key: M24 Sagittarius Star Cloud/2024
+  title: Small Sagittarius Star Cloud
+  objects:
+    - M24
+    - NGC 6603
+    - Sh2-41
+    - IC 1283
+    - NGC 6567
+  scope: Askar FMA180 Pro
+  filter: Astronomik L2
+  camera: ASI585MC
+  sessions:
+    - date: 2024-07-13
+      frames: 132
+      exposure: 60
+    - date: 2024-07-14
+      frames: 83
+      exposure: 60
+  wiki: Small_Sagittarius_Star_Cloud
+
+- key: M41/2025
+  title: M41
+  objects:
+    - M41
+  sessions:
+    - 2025-04-07
+  scope: RedCat 51 WIFD
+  filter: Optolong L-PRO
+  camera: ASI585MC
+  sessions:
+    - date: 2025-04-07
+    - frames: 215
+    - exposure: 60
+
+- key: M45 Pleiades/2024
+  title: Pleiades
+  objects:
+    - M45
+  scope: SharpStar 76EDPH
+  filter: Astronomik L2
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-12-30
+      frames: 40
+      exposure: 300
+    - date: 2024-12-31
+      frames: 78
+      exposure: 300
+    - date: 2025-01-01
+      frames: 38
+      exposure: 300
+  wiki: https://en.wikipedia.org/wiki/Pleiades
+
+- key: M50/2025
+  title: M50
+  objects:
+    - M50
+  scope: RedCat 51 WIFD
+  filter: Optolong L-PRO
+  camera: ASI585MC
+  sessions:
+    - date: 2025-04-11
+      frames: 60
+      exposure: 60
+
+- key: M53/2025
+  title: M53
+  objects:
+    - M53
+  scope: RedCat 51 WIFD
+  filter: Optolong L-PRO
+  camera: ASI585MC
+  sessions:
+    - date: 2025-04-11
+      frames: 38
+      exposure: 38
+    - date: 2025-04-12
+      frames: 176
+      exposure: 60
+
+- key: M67/2025
+  title: M67
+  objects:
+    - M67
+  scope: SharpStar 76EDPH
+  filter: Astronomik L2
+  camera: ASI585MC
+  sessions:
+    - date: 2025-02-05
+      frames: 60
+      exposure: 60
+  wiki: Messier_67
+
+- key: M104 Sombrero Galaxy/2025
+  title: Sombrero Galaxy
+  objects:
+    - M104
+  scope: RedCat 51 WIFD
+  filter: Optolong L-PRO
+  camera: ASI585MC
+  sessions:
+    - date: 2025-04-07
+      frames: 58
+      exposure: 180
+    - date: 2025-04-08
+      frames: 98
+      exposure: 180
+    - date: 2025-04-09
+      frames: 58
+      exposure: 180
+
+- key: IC 2177 Seagull Nebula/2025
+  title: Seagull Nebula
+  objects:
+    - IC 2177
+    - VdB95
+  scope: Askar FMA180 Pro
+  camera: ASI533MC Pro
+  filter: Optolong L-ULTIMATE
+  sessions:
+    - date: 2025-03-02
+      frames: 58
+      exposure: 300
+    - date: 2025-03-03
+      frames: 68
+      exposure: 300
+    - date: 2025-03-04
+      frames: 63
+      exposure: 300
+    - date: 2025-03-05
+      frames: 62
+      exposure: 300
+    - date: 2025-03-06
+      frames: 38
+      exposure: 300
+  wiki: IC_2177
+
+- key: Sh 2-308 Dolphin-Head Nebula
+  title: Dolhpin-Head Nebula
+  objects:
+    - Sh 2-303
+    - Sh 2-308
+  scope: Askar FMA180 Pro
+  camera: ASI533MC Pro
+  filter: Optolong L-ULTIMATE
+  sessions:
+    - date: 2025-03-21
+      frames: 32
+      exposure: 300
+  wiki: Sh_2-308
