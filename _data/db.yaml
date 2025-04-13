@@ -1,3 +1,32 @@
+- key: B33 Horsehead Nebula
+  title: Horsehead Nebula and Flame Nebula
+  objects:
+    - B33
+    - IC434
+    - NGC2023
+    - NGC2024
+  scope: SharpStar 76EDPH
+  filter: Optolong L-ENHANCE
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-11-22
+      frames: 34
+      exposure: 180
+    - date: 2024-11-23
+      frames: 120
+      exposure: 180
+    - date: 2024-11-30
+      frames: 3
+      exposure: 180
+    - date: 2024-12-01
+      frames: 64
+      exposure: 180
+    - date: 2024-12-02
+      frames: 106
+      exposure: 180
+  wiki: Horsehead_Nebula
+  abin: https://cdn.astrobin.com/thumbs/GpaObqmTxhl5_620x0_esdlMP5Y.png
+
 - key: M42 Great Orion Nebula/2024
   title: Great Orion Nebula
   objects:
