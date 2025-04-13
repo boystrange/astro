@@ -1,3 +1,28 @@
+- key: M16 Eagle Nebula/2024
+  title: Eagle Nebula
+  objects:
+    - M16
+  scope: SharpStar 76EDPH
+  filter: Optolong L-ENHANCE
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-06-01
+      frames: 18
+      exposure: 180
+    - date: 2024-06-02
+      frames: 82
+      exposure: 180
+    - date: 2024-06-13
+      frames: 51
+      exposure: 180
+    - date: 2024-06-14
+      frames: 90
+      exposure: 180
+    - date: 2024-06-15
+      frames: 56
+      exposure: 180
+  wiki: Eagle_Nebula
+
 - key: M101 Pinwheel Galaxy/2024
   title: Pinwheel Galaxy
   objects:
