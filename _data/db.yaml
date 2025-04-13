@@ -1,3 +1,66 @@
+- key: M42 Great Orion Nebula/2024
+  title: Great Orion Nebula
+  objects:
+    - M42
+    - M43
+  scope: SharpStar 76EDPH
+  filter: Optolong L-ENHANCE
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-12-24
+      frames: 1
+      exposure: 300
+    - date: 2024-12-25
+      frames: 29
+      exposure: 300
+    - date: 2024-12-26
+      frames: 56
+      exposure: 300
+    - date: 2024-12-27
+      frames: 12
+      exposure: 300
+    - date: 2024-12-28
+      frames: 33
+      exposure: 60
+    - date: 2024-12-29
+      frames: 7
+      exposure: 300
+    - date: 2024-12-29
+      frames: 45
+      exposure: 60
+  wiki: Orion_Nebula
+
+- key: C49 Rosette Nebula/2024
+  title: Rosette Nebula
+  objects:
+    - C49
+    - NGC2239
+    - NGC2244
+    - NGC2252
+    - NGC2238
+    - NGC2237
+    - NGC2246
+  scope: SharpStar 76EDPH
+  filter: Optolong L-ENHANCE
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-12-26
+      frames: 30
+      exposure: 300
+    - date: 2024-12-27
+      frames: 92
+      exposure: 300
+    - date: 2024-12-28
+      frames: 77
+      exposure: 300
+    - date: 2024-12-29
+      frames: 80
+      exposure: 300
+    - date: 2024-12-30
+      frames: 52
+      exposure: 300
+  wiki: Rosette_Nebula
+
 - key: IC443 Jellyfish Nebula/2025 SharpStar
   title: Jellyfish Nebula
   objects:
