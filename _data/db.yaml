@@ -1,3 +1,22 @@
+- key: M101 Pinwheel Galaxy/2024
+  title: Pinwheel Galaxy
+  objects:
+    - M101
+  scope: SharpStar 76EDPH
+  camera: ASI533MC Pro
+  filter: Astronomik L2
+  sessions:
+    - date: 2024-06-05
+      frames: 51
+      exposure: 180
+    - date: 2024-06-06
+      frames: 99
+      exposure: 180
+    - date: 2024-06-07
+      frames: 50
+      exposure: 180
+  wiki: Pinwheel_Galaxy
+
 - key: NGC6960 Western Veil/2024
   title: Western Veil Nebula
   objects:
@@ -15,6 +34,7 @@
       frames: 59
       exposure: 180
   wiki: Veil_Nebula
+  abin: pKqNEN19nuZT_620x0_esdlMP5Y.png
 
 - key: C63 Helix Nebula
   title: Helix Nebula
