@@ -1,3 +1,21 @@
+- key: NGC6960 Western Veil/2024
+  title: Western Veil Nebula
+  objects:
+    - NGC6960
+  scope: SharpStar 76EDPH
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-07-09
+      frames: 52
+      exposure: 180
+    - date: 2024-07-10
+      frames: 107
+      exposure: 180
+    - date: 2024-07-11
+      frames: 59
+      exposure: 180
+  wiki: Veil_Nebula
+
 - key: C63 Helix Nebula
   title: Helix Nebula
   objects:
