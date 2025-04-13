@@ -1,3 +1,35 @@
+- key: C63 Helix Nebula
+  title: Helix Nebula
+  objects:
+    - C63
+  scope: SharpStar 76EDPH
+  filter: Optolong L-ENHANCE
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-08-12
+      frames: 25
+      exposure: 180
+    - date: 2024-08-13
+      frames: 53
+      exposure: 180
+    - date: 2024-08-23
+      frames: 34
+      exposure: 180
+    - date: 2024-08-24
+      frames: 55
+      exposure: 180
+    - date: 2024-08-30
+      frames: 50
+      exposure: 180
+    - date: 2024-08-31
+      frames: 56
+      exposure: 180
+    - date: 2024-09-06
+      frames: 38
+      exposure: 180
+  wiki: Helix_Nebula
+  abin: oxyhTgUOJAkc_620x0_esdlMP5Y.png
+
 - key: B33 Horsehead Nebula
   title: Horsehead Nebula and Flame Nebula
   objects:
@@ -25,7 +57,7 @@
       frames: 106
       exposure: 180
   wiki: Horsehead_Nebula
-  abin: https://cdn.astrobin.com/thumbs/GpaObqmTxhl5_620x0_esdlMP5Y.png
+  abin: GpaObqmTxhl5_620x0_esdlMP5Y.png
 
 - key: M42 Great Orion Nebula/2024
   title: Great Orion Nebula
