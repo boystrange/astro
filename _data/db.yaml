@@ -1,3 +1,169 @@
+- key: M35/2025-02
+  title: M35
+  objects:
+    - M35
+    - NGC 2158
+  scope: SharpStar 76EDPH
+  filter: Astronomik L2
+  camera: ASI585MC
+  sessions:
+    - date: 2025-02-05
+      frames: 120
+      exposure: 60
+  href: Messier_35
+
+- key: M33 Triangulum Galaxy/2024-10
+  title: Triangulum Galaxy
+  objects:
+    - M33
+  scope: SharpStar 76EDPH
+  filter: Astronomik L2
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-10-29
+      frames: 14
+      exposure: 180
+    - date: 2024-10-30
+      frames: 80
+      exposure: 180
+  href: Triangulum_Galaxy
+
+- key: M8 M20 Lagoon Nebula and Trifid Nebula/2024-07
+  title: Lagoon Nebula and Trifid Nebula
+  objects:
+    - M8
+    - M20
+    - M21
+  scope: SharpStar 76EDPH
+  filter: Optolong L-ENHANCE
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-07-15
+      frames: 75
+      exposure: 180
+    - date: 2024-07-16
+      frames: 117
+      exposure: 180
+    - date: 2024-07-17
+      frames: 48
+      exposure: 180
+  abin: 12eqyWWyUM3d_1824x0_esdlMP5Y.png
+
+- key: M3/2024
+  title: M3
+  objects:
+    - M3
+  scope: SharpStar 76EDPH
+  filter: Astronomik L2
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-05-12
+      frames: 60
+      exposure: 60
+  href: Messier_3
+
+- key: C65 Sculptor Galaxy/2024
+  title: Sculptor Galaxy
+  objects:
+    - C65
+  scope: SharpStar 76EDPH
+  filter: Astronomik L2
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-12-31
+      frames: 20
+      exposure: 180
+  href: Sculptor_Galaxy
+
+- key: M65 M66 Leo Triplet/2024
+  title: Leo Triplet
+  objects:
+    - M65
+    - M66
+    - NGC 3628
+  scope: SharpStar 76EDPH
+  filter: Astronomik L2
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-03-12
+      frames: 40
+      exposure: 180
+    - date: 2024-03-13
+      frames: 40
+      exposure: 180
+  href: Leo_Triplet
+  abin: p5WPBHCRoxNT_1824x0_esdlMP5Y.png
+
+- key: NGC6992 Eastern Veil Nebula/2024
+  title: Eastern Veil Nebula
+  objects:
+    - NGC6992
+  scope: SharpStar 76EDPH
+  filter: Optolong L-ENHANCE
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-09-26
+      frames: 71
+      exposure: 180
+    - date: 2024-09-27
+      frames: 54
+      exposure: 180
+  wiki: Veil_Nebula
+  abin: y5c9ftkHOOoL_1824x0_esdlMP5Y.png
+
+- key: NGC6960 NGC6992 Veil Nebula/2024-11
+  title: Veil Nebula
+  objects:
+    - NGC6960
+    - NGC6992
+  scope: Askar FMA180 Pro
+  filter: Optolong L-ENHANCE
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-11-14
+      frames: 47
+      exposure: 180
+    - date: 2024-11-15
+      frames: 80
+      exposure: 180
+
+- key: M81 M82 Bode's Galaxy and Cigar Galaxy/2024
+  title: Bode's Galaxy and Cigar Galaxy
+  objects:
+    - M81
+    - M82
+  scope: SharpStar 76EDPH
+  filter: Astronomik L2
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-02-13
+      frames: 40
+      exposure: 180
+    - date: 2024-02-14
+      frames: 40
+      exposure: 180
+  wiki: Messier_81
+  abin: yUXaNDfGuJac_1824x0_esdlMP5Y.png
+
+- key: IC1396 Elephant's Trunk
+  title: Elephant's Trunk
+  objects:
+    - IC1396
+  filter: Astronomik L2
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-07-31
+      frames: 60
+      exposure: 180
+    - date: 2024-08-01
+      frames: 126
+      exposure: 180
+    - date: 2024-08-02
+      frames: 64
+      exposure: 180
+  wiki: Elephant%27s_Trunk_Nebula
+  abin: _B9cKy3ig4vx_1824x0_esdlMP5Y.png
+
 - key: Markarian's Chain/2025-04
   title: Markarian's Chain
   objects:
@@ -206,6 +372,21 @@
       exposure: 60
   wiki: Orion_Nebula
 
+- key: M46 M47/2025-04
+  title: M46 and M47
+  objects:
+    - M46
+    - M47
+    - NGC2438
+    - NGC2423
+  scope: RedCat 51 WIFD
+  filter: Optolong L-PRO
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2025-04-02
+      frames: 60
+      exposure: 60
+
 - key: C49 Rosette Nebula/2024
   title: Rosette Nebula
   objects:
@@ -283,7 +464,7 @@
       frames: 51
       exposure: 300
 
-- key: M24 Sagittarius Star Cloud/2024
+- key: M24 Sagittarius Star Cloud/2024-07
   title: Small Sagittarius Star Cloud
   objects:
     - M24
@@ -317,6 +498,22 @@
     - frames: 215
     - exposure: 60
 
+- key: M44/2025-03
+  title: Beehive Open Cluster
+  objects:
+    - M44
+  scope: Askar FMA180 Pro
+  filter: Optolong L-PRO
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2025-03-08
+      frames: 60
+      exposure: 60
+    - date: 2025-03-16
+      frames: 104
+      exposure: 60
+  href: Beehive_Cluster
+
 - key: M45 Pleiades/2024
   title: Pleiades
   objects:
@@ -334,9 +531,10 @@
     - date: 2025-01-01
       frames: 38
       exposure: 300
-  wiki: https://en.wikipedia.org/wiki/Pleiades
+  wiki: Pleiades
+  abin: xPHkXU7hIqyt_1824x0_esdlMP5Y.jpg
 
-- key: M50/2025
+- key: M50/2025-04
   title: M50
   objects:
     - M50
@@ -362,6 +560,25 @@
     - date: 2025-04-12
       frames: 176
       exposure: 60
+
+- key: M58 M59 M60 M87 M89 M90/2025-04
+  title: M58
+  objects:
+    - M58
+    - M59
+    - M60
+    - M87
+    - M89
+    - M90
+  scope: RedCat 51 WIFD
+  camera: Canon EOS 250D
+  sessions:
+    - date: 2025-04-15
+      frames: 41
+      exposure: 180
+    - date: 2025-04-16
+      frames: 40
+      exposure: 180
 
 - key: M67/2025
   title: M67
@@ -393,6 +610,20 @@
     - date: 2025-04-09
       frames: 58
       exposure: 180
+  wiki: Sombrero_Galaxy
+  abin: s0BDWvUd6UgP_1824x0_esdlMP5Y.png
+
+- key: NGC 1746/2025-02
+  title: NGC 1746
+  objects:
+    - NGC1746
+  scope: SharpStar 76EDPH
+  filter: Optolong L-PRO
+  camera: ASI585MC
+  sessions:
+    - date: 2025-02-05
+      frames: 60
+      exposure: 60
 
 - key: IC 2177 Seagull Nebula/2025
   title: Seagull Nebula
@@ -420,11 +651,11 @@
       exposure: 300
   wiki: IC_2177
 
-- key: Sh 2-308 Dolphin-Head Nebula
+- key: Sh2-308 Dolphin-Head Nebula
   title: Dolhpin-Head Nebula
   objects:
-    - Sh 2-303
-    - Sh 2-308
+    - Sh2-303
+    - Sh2-308
   scope: Askar FMA180 Pro
   camera: ASI533MC Pro
   filter: Optolong L-ULTIMATE
@@ -433,3 +664,87 @@
       frames: 32
       exposure: 300
   wiki: Sh_2-308
+
+- key: Moon/Mars-Moon-2025-03-08
+  title: Mars and Moon Conjunction"
+  objects:
+    - Mars
+    - Moon
+  sessions:
+    - date: 2025-03-08
+      frames: 60
+      exposure: 0.001
+    - date: 2025-03-08
+      frames: 60
+      exposure: 1
+    - date: 2025-03-08
+      frames: 60
+      exposure: 3
+  scope: Askar FMA180 Pro
+  filter: Astronomik L2
+  camera: ASI533MC Pro
+
+- key: Comet 12P Pons-Brooks/2024
+  title: Comet 12P/Pons-Brooks
+  objects:
+    - 12P/Pons-Brooks
+  sessions:
+    - date: 2024-03-12
+      frames: 47
+      exposure: 120
+  scope: SharpStar 76EDPH
+  filter: Astronomik L2
+  camera: ASI533MC Pro
+  wiki: 12P/Pons–Brooks
+
+- key: Comet C2023 A3 Tsuchinshan–ATLAS
+  title: C/2023 A3 (Tsuchinshan–ATLAS)
+  objects:
+    - C/2023 A3 (Tsuchinshan–ATLAS)
+  sessions:
+    - date: 2024-10-29
+      frames: 10
+      exposure: 30
+  scope: SharpStar 76EDPH
+  filter: Astronomik L2
+  camera: ASI533MC Pro
+  wiki: C/2023_A3_(Tsuchinshan–ATLAS)
+
+- key: NGC7000 North America Nebula/2024-07
+  title: North America Nebula
+  objects:
+    - NGC7000
+  scope: SharpStar 76EDPH
+  filter: Optolong L-ENHANCE
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-07-04
+      frames: 48
+      exposure: 180
+    - date: 2024-07-05
+      frames: 107
+      exposure: 180
+    - date: 2024-07-06
+      frames: 64
+      exposure: 180
+  wiki: North_America_Nebula
+
+- key: NGC7000 North America Nebula & Pelican Nebula/2024-07
+  title: North America Nebula and Pelican Nebula
+  objects:
+    - NGC7000
+    - IC5070
+  scope: Askar FMA180 Pro
+  filter: Optolong L-ENHANCE
+  camera: ASI533MC Pro
+  sessions:
+    - date: 2024-07-22
+      frames: 55
+      exposure: 180
+    - date: 2024-07-23
+      frames: 120
+      exposure: 180
+    - date: 2024-07-24
+      frames: 36
+      exposure: 180
+  wiki: North_America_Nebula

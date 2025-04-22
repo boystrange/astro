@@ -27,8 +27,7 @@
     - M44
   sessions:
     - 2025-03-16
-  integration: 1.73
-  light-frames: 104
+  light-frames: 164
   scope: Askar FMA180 Pro
   camera: ASI533MC Pro
   filter: Optolong L-PRO
