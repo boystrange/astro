@@ -580,6 +580,23 @@
       frames: 40
       exposure: 180
 
+- key: M64/2025-05
+  title: M64 Black Eye Galaxy
+  objects:
+    - M64
+  scope: SharpStar 76EDPH
+  filter: Optolong L-PRO
+  camera: ASI585MC Pro
+  gain: 252
+  sessions:
+    - date: 2025-04-30
+      frames: 50
+      exposure: 180
+    - date: 2025-05-01
+      frames: 64
+      exposure: 180
+  wiki: Black_Eye_Galaxy
+
 - key: M67/2025
   title: M67
   objects:
