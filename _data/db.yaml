@@ -183,6 +183,20 @@
   wiki: Markarian%27s_Chain
   abin: orjQUPe_0i0k_620x0_esdlMP5Y.png
 
+- key: Markarian's Chain/2025-05
+  title: Markarian's Chain
+  objects:
+    - M84
+    - M86
+  scope: RedCat 51 WIFD
+  filter: Optolong L-PRO
+  camera: ASI585MC Pro
+  sessions:
+    - date: 2025-05-01
+      frames: 48
+      exposure: 180
+  wiki: Markarian%27s_Chain
+
 - key: Markarian's Chain/2025-03
   title: Markarian's Chain
   objects:
