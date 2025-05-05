@@ -155,9 +155,9 @@ the images are 100 pixels on a side each, if the brightness variation was part
 of fine detail of an image it would be very easy for it to vanish completely due
 to the level of noise.
 
-![50% gray noise](50%gray_noise.png)
+![50% gray noise](50_gray_noise.png)
 
-![45% gray noise](45%gray_noise.png)
+![45% gray noise](45_gray_noise.png)
 
 Ok, enough on random noise (or at least shot noise) for now. In the next part
 we'll see how the background signal arises and how it makes shot noise even
