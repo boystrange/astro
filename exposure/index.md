@@ -45,16 +45,16 @@ how that affects the faint detail that we hope to see.
 
 The trouble with the word "noise" (and the reason I am using it in quotes) is
 that it gets used to cover two different concepts in imaging that really should
-have different labels - these concepts are
+have different labels - these concepts are the following ones:
 
-**Random Noise** - this means random variations between pixel values in a single
+**Random Noise**: this means random variations between pixel values in a single
 frame (or between the value at a single pixel in sequential frames). These
 random variations occur even when you are taking images of (for instance) a
 perfectly flatly illuminated grey surface - not every pixel will have the value
 of 50%, some will be 49%, some 51%, a few 48% and 52%. We'll come back to the
 causes of these variations in a minute.
 
-**Background Signal** - this means extra signal that is added to image the
+**Background Signal**: this means extra signal that is added to image the
 information that you really want. The information you really want is pictures of
 galaxies, nebulae, etc. The background signal comes primarily from sky glow
 (sometimes called sky noise) and a thermal background caused by the temperature
@@ -63,22 +63,18 @@ either of these effects as noise here to avoid confusion, but it turns out that
 both of them can lead to random noise and that turns out to be critical to
 understanding what exposure to choose.
 
-Ok, that will do for post one - we've introduced the problem and made sure our
-naming is clear, in the next section we will cover sources of random noise.
-
 ## Random Noise
 
-Let's talk for a moment about how a digital imaging sensor works...
-
-Photons (which have been collected by your telescope or camera lens) hit one of
-the pixels on the sensor and each photon that hits the sensor has a chance of
-being detected. Being detected means that the photon has managed to transfer an
-electron into the charge well in the pixel and it is the number of these
-electrons collected in each pixel that eventually gets turned into the image
-that we view. The chance of a photon being detected is called the Quantum
-Efficiency of the sensor, and for modern camera sensors it can be 40-50% or even
-higher. Traditional photographic film only detected just a few percent of the
-photons that fell on it, which explains why digital imaging has transformed
+Let's talk for a moment about how a digital imaging sensor works. Photons (which
+have been collected by your telescope or camera lens) hit one of the pixels on
+the sensor and each photon that hits the sensor has a chance of being detected.
+Being detected means that the photon has managed to transfer an electron into
+the charge well in the pixel and it is the number of these electrons collected
+in each pixel that eventually gets turned into the image that we view. The
+chance of a photon being detected is called the **Quantum Efficiency** of the
+sensor, and for modern camera sensors it can be 40-50% or even higher.
+Traditional photographic film only detected just a few percent of the photons
+that fell on it, which explains why digital imaging has transformed
 astrophotography so much!
 
 Just to complete the picture of how we get the image out of our camera, once the
@@ -108,7 +104,7 @@ the rate of 10 photons per second is only an average. It's like tossing a coin -
 on average if you toss a coin 10 times you get five heads, but you don't get
 five heads *every* time you do 10 coin tosses. This type of noise - caused by
 random variations in the number of electrons detected for pixels that are
-illuminated with the same intensity - is often called shot noise.
+illuminated with the same intensity - is often called **shot noise**.
 
 Now, it turns out that the random part of the number of electrons (ie by how
 much it is likely to be over or under the average value) can be modelled by a
@@ -198,7 +194,7 @@ electrons from thermal effects at a particular rate too. So, we can write down
 an equation like this
 
 $$
-    n_e = t(Qr_{p,\mathit{target}} + Qr_{p,\mathit{sky}} + r_{e,\mathit{termal}})
+    n_e = t(Qr_{p,\mathit{target}} + Qr_{p,\mathit{sky}} + r_{e,\mathit{thermal}})
 $$
 
 That is that the number of electrons collected by a pixel in an exposure is
@@ -239,9 +235,9 @@ read noise - and how all the parts fit together.
 Once the exposure is completed, the camera measures the voltage for each pixel
 using an ADC (analogue to digital converter). In CMOS cameras there is an ADC on
 each pixel, so the readout is very quick, wherease in CCD cameras the charge is
-moved accross the rows of pixels in the camera to a single ADC, leading to
-slower readout times. Whichever way the readout happens, it's unfortunately not
-100% accurate - this inaccuracy is referred to as Read Noise.
+moved across the rows of pixels in the camera to a single ADC, leading to slower
+readout times. Whichever way the readout happens, it's unfortunately not 100%
+accurate - this inaccuracy is referred to as **Read Noise**.
 
 Read Noise means that the digital value we get out of a pixel doesn't exactly
 equate to the number of electrons that were collected by that pixel and that the
@@ -252,10 +248,10 @@ measurements to electrons - that is a camera might have a read noise of 3e or
 8e.
 
 Modern CMOS cameras can have read noise values as low as 1e, although 2e-3e are
-more typical. Older CMOS cameras may have read noise values of up to 7-8e.
+more typical. Older CMOS cameras may have read noise values of up to 7e-8e.
 Almost all CMOS cameras have a gain control that can be adjusted (the gain acts
 as a pre-multiplier for the pixel voltage before it is passed to the ADC, so
-that when the gain is increase you get a bigger increment in ADU for a single
+that when the gain is increased you get a bigger increment in ADU for a single
 extra electron). Usually CMOS cameras show a smaller read noise as the gain is
 increased, although the drop in read noise usually quickly levels off. CMOS
 cameras typically have a very large effective read noise in 8 bit mode - this is
@@ -362,7 +358,7 @@ We intend to image for a total time of $T$ seconds and we will divide that time
 into $n$ separate sub exposures each of duration $t$ seconds, where $T=tn$.
 
 What we need to do now is to work out the total noise level of the final stack
-of n images that we will have at the end of our imaging session. The lower the
+of $n$ images that we will have at the end of our imaging session. The lower the
 total noise level of that final stacked image, the better our final image will
 look and the more faint detail we will be able to see. In fact we will calculate
 the noise of the darkest parts of the image where the only signal comes from the
